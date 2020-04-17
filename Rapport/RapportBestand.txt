@@ -1,0 +1,924 @@
+Totaal aantal straten: 88969
+
+Aantal Straten per provincie : 
+
+	> Antwerpen : 20832
+	> Vlaams-Brabant : 15011
+	> West-Vlaanderen : 18670
+	> Oost-Vlaanderen : 20796
+	> Limburg : 13660
+
+StraatInfo voor provincie Antwerpen :
+
+	> Aartselaar :123 ,totale lengte:70566
+		 >> Id: 174519 , Naam: Gebr. vander Elstlaan , Lengte: 64 m
+		 >> Id: 15 , Naam: Boomsesteenweg , Lengte: 6185 m
+	> Antwerpen :3441 ,totale lengte:1605390
+		 >> Id: 185238 , Naam: Stationsplantsoen , Lengte: 3 m
+		 >> Id: 2537 , Naam: Scheldelaan , Lengte: 58569 m
+	> Boechout :185 ,totale lengte:104426
+		 >> Id: 3363 , Naam: Den Heuvelt , Lengte: 57 m
+		 >> Id: 3464 , Naam: Provinciesteenweg , Lengte: 8584 m
+	> Boom :159 ,totale lengte:71878
+		 >> Id: 3634 , Naam: Prawiel , Lengte: 37 m
+		 >> Id: 3538 , Naam: Antwerpsestraat , Lengte: 4739 m
+	> Borsbeek :80 ,totale lengte:34710
+		 >> Id: 144829 , Naam: Koude Beeklaan , Lengte: 68 m
+		 >> Id: 3699 , Naam: Frans Beirenslaan , Lengte: 3896 m
+	> Brasschaat :338 ,totale lengte:236430
+		 >> Id: 145604 , Naam: Varendreef , Lengte: 26 m
+		 >> Id: 3776 , Naam: Bredabaan , Lengte: 12792 m
+	> Brecht :491 ,totale lengte:337679
+		 >> Id: 156400 , Naam: Pijnboomdreef , Lengte: 54 m
+		 >> Id: 4389 , Naam: Tilburgbaan , Lengte: 7941 m
+	> Edegem :213 ,totale lengte:82103
+		 >> Id: 4566 , Naam: Oudebaan , Lengte: 21 m
+		 >> Id: 4586 , Naam: Prins Boudewijnlaan , Lengte: 6612 m
+	> Essen :260 ,totale lengte:209192
+		 >> Id: 156913 , Naam: Gerard Meeusenstraat , Lengte: 10 m
+		 >> Id: 4768 , Naam: Moerkantsebaan , Lengte: 5863 m
+	> Hemiksem :110 ,totale lengte:34318
+		 >> Id: 144158 , Naam: Rupske Lauwerslaan , Lengte: 45 m
+		 >> Id: 4953 , Naam: U.N.O.-Laan , Lengte: 1515 m
+	> Hove :108 ,totale lengte:43837
+		 >> Id: 5032 , Naam: Neckersbeemd , Lengte: 66 m
+		 >> Id: 5021 , Naam: Lintsesteenweg , Lengte: 4267 m
+	> Kalmthout :278 ,totale lengte:197242
+		 >> Id: 5153 , Naam: Heidestatieplein , Lengte: 31 m
+		 >> Id: 5096 , Naam: Brasschaatsteenweg , Lengte: 4347 m
+	> Kapellen :310 ,totale lengte:188455
+		 >> Id: 146528 , Naam: Dorpsplein , Lengte: 39 m
+		 >> Id: 5435 , Naam: Kalmthoutsesteenweg , Lengte: 5089 m
+	> Kontich :223 ,totale lengte:134866
+		 >> Id: 5796 , Naam: Varkensmarkt , Lengte: 36 m
+		 >> Id: 5753 , Naam: Pierstraat , Lengte: 5798 m
+	> Lint :96 ,totale lengte:41478
+		 >> Id: 140398 , Naam: Beukenlaan , Lengte: 20 m
+		 >> Id: 5864 , Naam: Liersesteenweg , Lengte: 2621 m
+	> Mortsel :170 ,totale lengte:82448
+		 >> Id: 5929 , Naam: Dorpsstraat , Lengte: 54 m
+		 >> Id: 5985 , Naam: Liersesteenweg , Lengte: 5760 m
+	> Niel :106 ,totale lengte:35234
+		 >> Id: 6089 , Naam: Fabrieksstraat , Lengte: 27 m
+		 >> Id: 6078 , Naam: Boomsestraat , Lengte: 1913 m
+	> Ranst :256 ,totale lengte:182635
+		 >> Id: 6302 , Naam: Patrijzenlaan , Lengte: 42 m
+		 >> Id: 6310 , Naam: Ranstsesteenweg , Lengte: 4494 m
+	> Rumst :177 ,totale lengte:101763
+		 >> Id: 6550 , Naam: Vorft , Lengte: 44 m
+		 >> Id: 6389 , Naam: Antwerpsesteenweg , Lengte: 4292 m
+	> Schelle :114 ,totale lengte:46971
+		 >> Id: 144854 , Naam: Poortelei , Lengte: 8 m
+		 >> Id: 6630 , Naam: Steenwinkelstraat , Lengte: 2985 m
+	> Schilde :294 ,totale lengte:205654
+		 >> Id: 140543 , Naam: Kantonbaan , Lengte: 29 m
+		 >> Id: 6894 , Naam: Turnhoutsebaan , Lengte: 11528 m
+	> Schoten :363 ,totale lengte:215089
+		 >> Id: 7247 , Naam: Zagerijstraat , Lengte: 35 m
+		 >> Id: 7234 , Naam: Vordensteinstraat , Lengte: 8128 m
+	> Stabroek :155 ,totale lengte:88013
+		 >> Id: 7337 , Naam: Magnolialaan , Lengte: 45 m
+		 >> Id: 7351 , Naam: Oud Broek , Lengte: 3379 m
+	> Wijnegem :98 ,totale lengte:65925
+		 >> Id: 165610 , Naam: Wervehof , Lengte: 8 m
+		 >> Id: 7427 , Naam: Houtlaan , Lengte: 8581 m
+	> Wommelgem :152 ,totale lengte:79185
+		 >> Id: 140175 , Naam: Meuleveld , Lengte: 27 m
+		 >> Id: 7518 , Naam: Herentalsebaan , Lengte: 6302 m
+	> Wuustwezel :403 ,totale lengte:332505
+		 >> Id: 7720 , Naam: Gooreindbaan , Lengte: 18 m
+		 >> Id: 7658 , Naam: Bredabaan , Lengte: 12019 m
+	> Zandhoven :210 ,totale lengte:199370
+		 >> Id: 140220 , Naam: Halle Velden , Lengte: 14 m
+		 >> Id: 8081 , Naam: Jagerslaan , Lengte: 15664 m
+	> Zoersel :314 ,totale lengte:212315
+		 >> Id: 190013 , Naam: Klaverpad , Lengte: 61 m
+		 >> Id: 8423 , Naam: Raymond Delbekestraat , Lengte: 3417 m
+	> Zwijndrecht :165 ,totale lengte:96141
+		 >> Id: 142688 , Naam: Binnenplein , Lengte: 46 m
+		 >> Id: 8573 , Naam: Krijgsbaan , Lengte: 4894 m
+	> Malle :224 ,totale lengte:173134
+		 >> Id: 8727 , Naam: Hooiberg , Lengte: 74 m
+		 >> Id: 8653 , Naam: Antwerpsesteenweg , Lengte: 11226 m
+	> Berlaar :124 ,totale lengte:101515
+		 >> Id: 8890 , Naam: Heimolenstraat , Lengte: 26 m
+		 >> Id: 8944 , Naam: Smidstraat , Lengte: 7630 m
+	> Bonheiden :221 ,totale lengte:149505
+		 >> Id: 9095 , Naam: Molenberg , Lengte: 30 m
+		 >> Id: 9104 , Naam: Oude Baan , Lengte: 4810 m
+	> Bornem :237 ,totale lengte:185652
+		 >> Id: 180732 , Naam: Van Bruysselstraat , Lengte: 38 m
+		 >> Id: 9353 , Naam: Rijksweg , Lengte: 17249 m
+	> Duffel :156 ,totale lengte:114314
+		 >> Id: 9491 , Naam: Neervelden , Lengte: 62 m
+		 >> Id: 9499 , Naam: Oude Liersebaan , Lengte: 5244 m
+	> Heist-op-den-Berg :569 ,totale lengte:432576
+		 >> Id: 146045 , Naam: Koud Halzen , Lengte: 41 m
+		 >> Id: 9829 , Naam: Liersesteenweg , Lengte: 8645 m
+	> Lier :365 ,totale lengte:263599
+		 >> Id: 10348 , Naam: Voorbos , Lengte: 25 m
+		 >> Id: 10172 , Naam: Jagersdreef , Lengte: 22694 m
+	> Mechelen :837 ,totale lengte:403037
+		 >> Id: 10954 , Naam: Schoenmarkt , Lengte: 19 m
+		 >> Id: 140446 , Naam: Vrijbroekpark , Lengte: 10581 m
+	> Nijlen :262 ,totale lengte:192916
+		 >> Id: 11350 , Naam: Reigerslaan , Lengte: 59 m
+		 >> Id: 11394 , Naam: Vogelzangstraat , Lengte: 5258 m
+	> Putte :242 ,totale lengte:183726
+		 >> Id: 11491 , Naam: Hoekstraat , Lengte: 45 m
+		 >> Id: 11534 , Naam: Mechelbaan , Lengte: 11411 m
+	> Sint-Katelijne-Waver :241 ,totale lengte:175154
+		 >> Id: 12085 , Naam: Smalleweg , Lengte: 59 m
+		 >> Id: 11912 , Naam: Berlaarbaan , Lengte: 8964 m
+	> Willebroek :322 ,totale lengte:159674
+		 >> Id: 12228 , Naam: Hoge Heide , Lengte: 14 m
+		 >> Id: 12268 , Naam: Koning Boudewijnlaan , Lengte: 6515 m
+	> Arendonk :147 ,totale lengte:153809
+		 >> Id: 200264 , Naam: Priorshufke , Lengte: 59 m
+		 >> Id: 12437 , Naam: De Lusthoven , Lengte: 12371 m
+	> Baarle-Hertog :72 ,totale lengte:26277
+		 >> Id: 12582 , Naam: Prinsenstraat , Lengte: 12 m
+		 >> Id: 12575 , Naam: Oordeelstraat , Lengte: 1552 m
+	> Balen :385 ,totale lengte:309134
+		 >> Id: 12822 , Naam: Overmaai , Lengte: 37 m
+		 >> Id: 12865 , Naam: Schoorheide , Lengte: 4470 m
+	> Beerse :270 ,totale lengte:169212
+		 >> Id: 13011 , Naam: Gemeenteplein , Lengte: 44 m
+		 >> Id: 12964 , Naam: Antwerpseweg , Lengte: 6315 m
+	> Dessel :156 ,totale lengte:112426
+		 >> Id: 13315 , Naam: Ruitenstraat , Lengte: 44 m
+		 >> Id: 13325 , Naam: Turkeiestraat , Lengte: 3783 m
+	> Geel :538 ,totale lengte:496336
+		 >> Id: 13527 , Naam: Hertenstraat , Lengte: 12 m
+		 >> Id: 140326 , Naam: Westelijke Ring , Lengte: 8523 m
+	> Grobbendonk :251 ,totale lengte:136572
+		 >> Id: 13998 , Naam: Kiezelweg , Lengte: 55 m
+		 >> Id: 13985 , Naam: Jagersdreef , Lengte: 8002 m
+	> Herentals :398 ,totale lengte:268494
+		 >> Id: 14255 , Naam: Ieperstraat , Lengte: 38 m
+		 >> Id: 14257 , Naam: Jagersdreef , Lengte: 16612 m
+	> Herenthout :99 ,totale lengte:99169
+		 >> Id: 140252 , Naam: Klein Blokt , Lengte: 29 m
+		 >> Id: 14503 , Naam: Heikant , Lengte: 7078 m
+	> Herselt :174 ,totale lengte:237566
+		 >> Id: 174216 , Naam: Orgelstraatje , Lengte: 61 m
+		 >> Id: 14591 , Naam: Diestsebaan , Lengte: 6286 m
+	> Hoogstraten :296 ,totale lengte:349456
+		 >> Id: 14938 , Naam: Vredeboomstraat , Lengte: 72 m
+		 >> Id: 14768 , Naam: Groot Eyssel , Lengte: 8898 m
+	> Hulshout :170 ,totale lengte:94237
+		 >> Id: 140219 , Naam: Houtvensesteenweg , Lengte: 8 m
+		 >> Id: 14994 , Naam: Grote Baan , Lengte: 4150 m
+	> Kasterlee :395 ,totale lengte:323511
+		 >> Id: 190269 , Naam: Koolstraat , Lengte: 50 m
+		 >> Id: 181697 , Naam: Noord-Zuidlaan , Lengte: 7202 m
+	> Lille :301 ,totale lengte:281459
+		 >> Id: 15355 , Naam: Binnenhof , Lengte: 54 m
+		 >> Id: 15371 , Naam: Broekzijstraat , Lengte: 5929 m
+	> Meerhout :204 ,totale lengte:164653
+		 >> Id: 15635 , Naam: Eindeke , Lengte: 69 m
+		 >> Id: 15682 , Naam: Kiezel , Lengte: 5071 m
+	> Merksplas :175 ,totale lengte:153829
+		 >> Id: 15813 , Naam: Doelenplein , Lengte: 41 m
+		 >> Id: 15883 , Naam: Molenzijdse Heide , Lengte: 7311 m
+	> Mol :520 ,totale lengte:421725
+		 >> Id: 16252 , Naam: Moutierlaan , Lengte: 50 m
+		 >> Id: 16423 , Naam: Zuiderring , Lengte: 23182 m
+	> Olen :221 ,totale lengte:134553
+		 >> Id: 187370 , Naam: Stapkens , Lengte: 39 m
+		 >> Id: 16461 , Naam: Geelseweg , Lengte: 4972 m
+	> Oud-Turnhout :237 ,totale lengte:180960
+		 >> Id: 143652 , Naam: Pastoor Kruyfhooftstraat , Lengte: 54 m
+		 >> Id: 16596 , Naam: Arselt , Lengte: 6144 m
+	> Ravels :221 ,totale lengte:235843
+		 >> Id: 16980 , Naam: St.-Jansstraat , Lengte: 96 m
+		 >> Id: 16996 , Naam: Tulderheyde , Lengte: 8740 m
+	> Retie :233 ,totale lengte:165302
+		 >> Id: 185473 , Naam: Mollenpijp , Lengte: 41 m
+		 >> Id: 17145 , Naam: Looiendsebergen , Lengte: 4820 m
+	> Rijkevorsel :227 ,totale lengte:151331
+		 >> Id: 195072 , Naam: Oude Molenpad , Lengte: 54 m
+		 >> Id: 17346 , Naam: Oostmalsesteenweg , Lengte: 3391 m
+	> Turnhout :410 ,totale lengte:244438
+		 >> Id: 181165 , Naam: Tweetorentjesplein , Lengte: 34 m
+		 >> Id: 17658 , Naam: Parklaan , Lengte: 7057 m
+	> Vorselaar :106 ,totale lengte:87015
+		 >> Id: 17866 , Naam: Van Arenberglaan , Lengte: 50 m
+		 >> Id: 17814 , Naam: Heirbaan , Lengte: 6550 m
+	> Vosselaar :179 ,totale lengte:85751
+		 >> Id: 18015 , Naam: Torenlaan , Lengte: 10 m
+		 >> Id: 17882 , Naam: Antwerpsesteenweg , Lengte: 3650 m
+	> Westerlo :418 ,totale lengte:286512
+		 >> Id: 142325 , Naam: Sint-Antoniuspleintje , Lengte: 51 m
+		 >> Id: 18286 , Naam: Olenseweg , Lengte: 6438 m
+	> Laakdal :224 ,totale lengte:183515
+		 >> Id: 140322 , Naam: Huisbroek , Lengte: 6 m
+		 >> Id: 18524 , Naam: Nieuwe Baan , Lengte: 4816 m
+	> Puurs-Sint-Amands :306 ,totale lengte:244383
+		 >> Id: 204784 , Naam: Schommeling , Lengte: 32 m
+		 >> Id: 204767 , Naam: Rijksweg , Lengte: 15822 m
+
+StraatInfo voor provincie Vlaams-Brabant :
+
+	> Asse :380 ,totale lengte:233066
+		 >> Id: 24184 , Naam: Berkstraat , Lengte: 28 m
+		 >> Id: 24207 , Naam: Brusselsesteenweg , Lengte: 10884 m
+	> Beersel :381 ,totale lengte:209885
+		 >> Id: 24617 , Naam: Fazantenweg , Lengte: 29 m
+		 >> Id: 24853 , Naam: Vaartweg , Lengte: 4483 m
+	> Bever :22 ,totale lengte:59482
+		 >> Id: 144791 , Naam: Rue Manhove , Lengte: 49 m
+		 >> Id: 24891 , Naam: Akrenbos , Lengte: 10818 m
+	> Dilbeek :508 ,totale lengte:274601
+		 >> Id: 25386 , Naam: Zwanenhofstraat , Lengte: 29 m
+		 >> Id: 25212 , Naam: Ninoofsesteenweg , Lengte: 13517 m
+	> Galmaarden :109 ,totale lengte:113269
+		 >> Id: 139911 , Naam: Werfketse , Lengte: 33 m
+		 >> Id: 25447 , Naam: Ninoofsesteenweg , Lengte: 4540 m
+	> Gooik :146 ,totale lengte:135546
+		 >> Id: 139991 , Naam: De Motte , Lengte: 25 m
+		 >> Id: 25573 , Naam: Ninoofse Steenweg , Lengte: 6847 m
+	> Grimbergen :391 ,totale lengte:204622
+		 >> Id: 181015 , Naam: Brassershof , Lengte: 29 m
+		 >> Id: 25987 , Naam: Westvaartdijk , Lengte: 5982 m
+	> Halle :459 ,totale lengte:248177
+		 >> Id: 26293 , Naam: Pioenenlaan , Lengte: 9 m
+		 >> Id: 26028 , Naam: Bergensesteenweg , Lengte: 5501 m
+	> Herne :117 ,totale lengte:138372
+		 >> Id: 139875 , Naam: Poefketse , Lengte: 79 m
+		 >> Id: 26522 , Naam: Steenweg Asse , Lengte: 6131 m
+	> Hoeilaart :198 ,totale lengte:117821
+		 >> Id: 181693 , Naam: Fernaasstraat , Lengte: 47 m
+		 >> Id: 26651 , Naam: Sint Jansberglaan , Lengte: 8843 m
+	> Kampenhout :258 ,totale lengte:177615
+		 >> Id: 26725 , Naam: Drieswegel , Lengte: 33 m
+		 >> Id: 26746 , Naam: Haachtsesteenweg , Lengte: 17097 m
+	> Kapelle-op-den-Bos :140 ,totale lengte:72009
+		 >> Id: 26916 , Naam: Diepestraat , Lengte: 20 m
+		 >> Id: 26966 , Naam: Mechelseweg , Lengte: 2757 m
+	> Liedekerke :145 ,totale lengte:64923
+		 >> Id: 27108 , Naam: Monniksplein , Lengte: 20 m
+		 >> Id: 27036 , Naam: Affligemsestraat , Lengte: 2992 m
+	> Londerzeel :202 ,totale lengte:176298
+		 >> Id: 27266 , Naam: Lode Meeusplein , Lengte: 10 m
+		 >> Id: 27166 , Naam: Autostrade , Lengte: 6381 m
+	> Machelen :186 ,totale lengte:98433
+		 >> Id: 140073 , Naam: Sint-Martinuslaan , Lengte: 29 m
+		 >> Id: 27498 , Naam: Woluwelaan , Lengte: 9379 m
+	> Meise :307 ,totale lengte:177478
+		 >> Id: 27699 , Naam: Pater Pirelaan , Lengte: 45 m
+		 >> Id: 27619 , Naam: Kapellelaan , Lengte: 4617 m
+	> Merchtem :163 ,totale lengte:158388
+		 >> Id: 193899 , Naam: Kwetstenbeek , Lengte: 25 m
+		 >> Id: 27800 , Naam: Brusselsesteenweg , Lengte: 8650 m
+	> Opwijk :139 ,totale lengte:101551
+		 >> Id: 213635 , Naam: Mandemakersweg , Lengte: 67 m
+		 >> Id: 28021 , Naam: Steenweg op Vilvoorde , Lengte: 3689 m
+	> Overijse :385 ,totale lengte:235414
+		 >> Id: 28121 , Naam: Flamingohof , Lengte: 40 m
+		 >> Id: 28354 , Naam: Terhulpensesteenweg , Lengte: 5431 m
+	> Pepingen :105 ,totale lengte:104713
+		 >> Id: 144799 , Naam: Hameau de Trop , Lengte: 10 m
+		 >> Id: 28483 , Naam: Ninoofsesteenweg , Lengte: 6183 m
+	> Sint-Pieters-Leeuw :358 ,totale lengte:212981
+		 >> Id: 189678 , Naam: Dovenetelweg , Lengte: 32 m
+		 >> Id: 28529 , Naam: Bergensesteenweg , Lengte: 8961 m
+	> Steenokkerzeel :228 ,totale lengte:121017
+		 >> Id: 140064 , Naam: Jasmijnenplein , Lengte: 42 m
+		 >> Id: 28882 , Naam: Haachtsesteenweg , Lengte: 9445 m
+	> Ternat :184 ,totale lengte:128073
+		 >> Id: 29109 , Naam: Morettestraat , Lengte: 26 m
+		 >> Id: 29008 , Naam: Assesteenweg , Lengte: 6773 m
+	> Vilvoorde :416 ,totale lengte:188597
+		 >> Id: 29288 , Naam: Hazegras , Lengte: 28 m
+		 >> Id: 29553 , Naam: Woluwelaan , Lengte: 7944 m
+	> Zaventem :361 ,totale lengte:213838
+		 >> Id: 29671 , Naam: Hof-ten-Berglaan , Lengte: 10 m
+		 >> Id: 29738 , Naam: Leuvensesteenweg , Lengte: 13507 m
+	> Zemst :352 ,totale lengte:228450
+		 >> Id: 30143 , Naam: Tijmvoetweg , Lengte: 21 m
+		 >> Id: 30141 , Naam: Tervuursesteenweg , Lengte: 6393 m
+	> Roosdaal :192 ,totale lengte:108041
+		 >> Id: 30360 , Naam: Vierdeelsweg , Lengte: 46 m
+		 >> Id: 30312 , Naam: Ninoofsesteenweg , Lengte: 4992 m
+	> Drogenbos :46 ,totale lengte:20862
+		 >> Id: 30401 , Naam: Korte Linkebeekstraat , Lengte: 32 m
+		 >> Id: 30394 , Naam: Grote Baan , Lengte: 2694 m
+	> Kraainem :171 ,totale lengte:63583
+		 >> Id: 30534 , Naam: Oude Baan , Lengte: 28 m
+		 >> Id: 30428 , Naam: Baron Albert d'Huartlaan , Lengte: 4441 m
+	> Linkebeek :72 ,totale lengte:31792
+		 >> Id: 163383 , Naam: Anjou Square , Lengte: 12 m
+		 >> Id: 30616 , Naam: Hollebeekstraat , Lengte: 2126 m
+	> Sint-Genesius-Rode :258 ,totale lengte:134608
+		 >> Id: 30779 , Naam: Kwadelindekensweg , Lengte: 20 m
+		 >> Id: 30885 , Naam: Waterloose Steenweg , Lengte: 4437 m
+	> Wemmel :141 ,totale lengte:62957
+		 >> Id: 30914 , Naam: Brabants Dalplein , Lengte: 29 m
+		 >> Id: 31016 , Naam: Steenweg op Brussel , Lengte: 2177 m
+	> Wezembeek-Oppem :164 ,totale lengte:69571
+		 >> Id: 31182 , Naam: Wezembeekstraat , Lengte: 11 m
+		 >> Id: 31130 , Naam: Mechelsesteenweg , Lengte: 2623 m
+	> Lennik :172 ,totale lengte:140157
+		 >> Id: 178666 , Naam: Kleine Cottemstraat , Lengte: 71 m
+		 >> Id: 31303 , Naam: Ninoofsesteenweg , Lengte: 5013 m
+	> Affligem :149 ,totale lengte:99663
+		 >> Id: 31489 , Naam: Zwijnweg , Lengte: 52 m
+		 >> Id: 31380 , Naam: Brusselbaan , Lengte: 5038 m
+	> Aarschot :452 ,totale lengte:338208
+		 >> Id: 140726 , Naam: De Kluis , Lengte: 34 m
+		 >> Id: 31768 , Naam: Oude Mechelsebaan , Lengte: 6577 m
+	> Begijnendijk :107 ,totale lengte:91294
+		 >> Id: 31915 , Naam: Corn. Vissenaekensplein , Lengte: 108 m
+		 >> Id: 31946 , Naam: Liersesteenweg , Lengte: 4724 m
+	> Bekkevoort :89 ,totale lengte:121582
+		 >> Id: 141003 , Naam: Eindstraat , Lengte: 42 m
+		 >> Id: 32068 , Naam: Staatsbaan , Lengte: 13555 m
+	> Bertem :156 ,totale lengte:92672
+		 >> Id: 32223 , Naam: Zwanenpoel , Lengte: 30 m
+		 >> Id: 32204 , Naam: Tervuursesteenweg , Lengte: 9312 m
+	> Bierbeek :156 ,totale lengte:142574
+		 >> Id: 216562 , Naam: Heermoesstraat , Lengte: 49 m
+		 >> Id: 32335 , Naam: Tiensesteenweg , Lengte: 7262 m
+	> Boortmeerbeek :193 ,totale lengte:105226
+		 >> Id: 32512 , Naam: Trianonlaan , Lengte: 5 m
+		 >> Id: 32446 , Naam: Leuvensesteenweg , Lengte: 6208 m
+	> Boutersem :117 ,totale lengte:95212
+		 >> Id: 144557 , Naam: Camerveld , Lengte: 4 m
+		 >> Id: 32592 , Naam: Leuvensesteenweg , Lengte: 5530 m
+	> Diest :376 ,totale lengte:257650
+		 >> Id: 32782 , Naam: Keelstraat , Lengte: 23 m
+		 >> Id: 32742 , Naam: Hasseltsebaan , Lengte: 4501 m
+	> Geetbets :71 ,totale lengte:93278
+		 >> Id: 140999 , Naam: Spreeuwsteeg , Lengte: 34 m
+		 >> Id: 32988 , Naam: Glabbeekstraat , Lengte: 4567 m
+	> Haacht :207 ,totale lengte:155427
+		 >> Id: 33139 , Naam: Lipseweg , Lengte: 54 m
+		 >> Id: 33220 , Naam: Wijgmaalsesteenweg , Lengte: 5544 m
+	> Herent :256 ,totale lengte:177592
+		 >> Id: 183092 , Naam: Bukenstraat , Lengte: 24 m
+		 >> Id: 33362 , Naam: Mechelsesteenweg , Lengte: 9175 m
+	> Hoegaarden :107 ,totale lengte:97405
+		 >> Id: 140955 , Naam: Kapitalenveldstraat , Lengte: 31 m
+		 >> Id: 33501 , Naam: Hauthem , Lengte: 6504 m
+	> Holsbeek :177 ,totale lengte:148739
+		 >> Id: 33689 , Naam: Ramselberg , Lengte: 15 m
+		 >> Id: 33630 , Naam: Houwaartsebaan , Lengte: 4639 m
+	> Huldenberg :142 ,totale lengte:136580
+		 >> Id: 181153 , Naam: Lily Boeykensstraat , Lengte: 37 m
+		 >> Id: 33814 , Naam: Leuvensebaan , Lengte: 7142 m
+	> Keerbergen :174 ,totale lengte:125908
+		 >> Id: 33883 , Naam: Bosuilweg , Lengte: 28 m
+		 >> Id: 34009 , Naam: Tremelobaan , Lengte: 4879 m
+	> Kortenaken :127 ,totale lengte:141361
+		 >> Id: 34081 , Naam: Krawatenstraat_02 , Lengte: 113 m
+		 >> Id: 34055 , Naam: Heerbaan , Lengte: 5111 m
+	> Kortenberg :247 ,totale lengte:142889
+		 >> Id: 34175 , Naam: Craenenplein , Lengte: 34 m
+		 >> Id: 34280 , Naam: Leuvensesteenweg , Lengte: 8089 m
+	> Landen :246 ,totale lengte:159760
+		 >> Id: 34446 , Naam: Gendarmerieplein , Lengte: 26 m
+		 >> Id: 34460 , Naam: Hannuitsesteenweg , Lengte: 5071 m
+	> Leuven :1058 ,totale lengte:512216
+		 >> Id: 34870 , Naam: Haaggang , Lengte: 5 m
+		 >> Id: 34606 , Naam: Aarschotsesteenweg , Lengte: 7116 m
+	> Lubbeek :268 ,totale lengte:196946
+		 >> Id: 147041 , Naam: O.L.-Vrouwstraat , Lengte: 10 m
+		 >> Id: 35779 , Naam: Staatsbaan , Lengte: 8957 m
+	> Oud-Heverlee :178 ,totale lengte:130645
+		 >> Id: 140596 , Naam: Parnassusbergdreef , Lengte: 7 m
+		 >> Id: 140595 , Naam: Expresweg , Lengte: 4746 m
+	> Rotselaar :255 ,totale lengte:210253
+		 >> Id: 155109 , Naam: Klein-Vlasselaar , Lengte: 65 m
+		 >> Id: 147228 , Naam: Autosnelweg E314 , Lengte: 6891 m
+	> Tervuren :340 ,totale lengte:206488
+		 >> Id: 36382 , Naam: Roodborstjeslaan , Lengte: 26 m
+		 >> Id: 36412 , Naam: Tervurenlaan , Lengte: 6387 m
+	> Tienen :543 ,totale lengte:366629
+		 >> Id: 182383 , Naam: Residentie Hageland , Lengte: 6 m
+		 >> Id: 36456 , Naam: Aarschotsesteenweg , Lengte: 5421 m
+	> Tremelo :163 ,totale lengte:139128
+		 >> Id: 140693 , Naam: Preterstraat , Lengte: 40 m
+		 >> Id: 36979 , Naam: Veldonkstraat , Lengte: 6713 m
+	> Zoutleeuw :160 ,totale lengte:154184
+		 >> Id: 37099 , Naam: Waaiberg , Lengte: 7 m
+		 >> Id: 37020 , Naam: Grote Steenweg , Lengte: 6530 m
+	> Linter :110 ,totale lengte:100474
+		 >> Id: 37112 , Naam: Boomgaardstraat , Lengte: 46 m
+		 >> Id: 37189 , Naam: Sint-Truidensesteenweg , Lengte: 6830 m
+	> Scherpenheuvel-Zichem :294 ,totale lengte:240441
+		 >> Id: 37427 , Naam: Spreeuwstraat , Lengte: 44 m
+		 >> Id: 37264 , Naam: Frans Smeyersstraat , Lengte: 4108 m
+	> Tielt-Winge :150 ,totale lengte:175786
+		 >> Id: 182955 , Naam: Perkveld , Lengte: 69 m
+		 >> Id: 37559 , Naam: Leuvensesteenweg , Lengte: 8120 m
+	> Glabbeek :87 ,totale lengte:85532
+		 >> Id: 37681 , Naam: Ovenweg , Lengte: 72 m
+		 >> Id: 37698 , Naam: Tiensesteenweg , Lengte: 8286 m
+
+StraatInfo voor provincie West-Vlaanderen :
+
+	> Beernem :273 ,totale lengte:284008
+		 >> Id: 44380 , Naam: Anjelierenstraat , Lengte: 35 m
+		 >> Id: 44538 , Naam: Reigerlostraat , Lengte: 8387 m
+	> Blankenberge :246 ,totale lengte:103309
+		 >> Id: 44761 , Naam: P. Gielisstraat , Lengte: 48 m
+		 >> Id: 44705 , Naam: Koning Albert-I-laan , Lengte: 4558 m
+	> Brugge :1536 ,totale lengte:860376
+		 >> Id: 45895 , Naam: Rozemarijnstraat , Lengte: 7 m
+		 >> Id: 45157 , Naam: Expresweg , Lengte: 22930 m
+	> Damme :256 ,totale lengte:301727
+		 >> Id: 46527 , Naam: Zomerstraat-West , Lengte: 8 m
+		 >> Id: 46410 , Naam: Natiënlaan , Lengte: 19289 m
+	> Jabbeke :224 ,totale lengte:208078
+		 >> Id: 156459 , Naam: Krakkestraat , Lengte: 16 m
+		 >> Id: 46577 , Naam: Gistelsteenweg , Lengte: 11649 m
+	> Oostkamp :404 ,totale lengte:304849
+		 >> Id: 46848 , Naam: Jan Palfijnstraat , Lengte: 29 m
+		 >> Id: 46888 , Naam: Kortrijksestraat , Lengte: 14014 m
+	> Torhout :332 ,totale lengte:203445
+		 >> Id: 47115 , Naam: Bliekstraat , Lengte: 26 m
+		 >> Id: 47290 , Naam: Oostendestraat , Lengte: 5746 m
+	> Zedelgem :340 ,totale lengte:271118
+		 >> Id: 47590 , Naam: Nachtegaalstraat , Lengte: 43 m
+		 >> Id: 47657 , Naam: Torhoutsesteenweg , Lengte: 14908 m
+	> Zuienkerke :73 ,totale lengte:109290
+		 >> Id: 47756 , Naam: Zakstraat , Lengte: 43 m
+		 >> Id: 47735 , Naam: Oostendse Steenweg , Lengte: 8516 m
+	> Knokke-Heist :625 ,totale lengte:320226
+		 >> Id: 163421 , Naam: Door Boerewaardplein , Lengte: 12 m
+		 >> Id: 48078 , Naam: Natiënlaan , Lengte: 11547 m
+	> Diksmuide :503 ,totale lengte:386437
+		 >> Id: 48745 , Naam: Vrijheidsplein , Lengte: 24 m
+		 >> Id: 48452 , Naam: Ijzerdijk , Lengte: 20907 m
+	> Houthulst :175 ,totale lengte:203402
+		 >> Id: 141439 , Naam: Ketsedijk , Lengte: 55 m
+		 >> Id: 48809 , Naam: Bosdreef , Lengte: 17290 m
+	> Koekelare :169 ,totale lengte:141321
+		 >> Id: 49020 , Naam: Molenplein , Lengte: 37 m
+		 >> Id: 49042 , Naam: Provinciebaan , Lengte: 4686 m
+	> Kortemark :160 ,totale lengte:196261
+		 >> Id: 141411 , Naam: Renaat Desmedtstraat , Lengte: 6 m
+		 >> Id: 49193 , Naam: Staatsbaan , Lengte: 9152 m
+	> Lo-Reninge :95 ,totale lengte:142581
+		 >> Id: 49245 , Naam: Gasthuisstraat , Lengte: 70 m
+		 >> Id: 49286 , Naam: Rabbelaresteenweg , Lengte: 4982 m
+	> Ieper :559 ,totale lengte:529907
+		 >> Id: 198527 , Naam: Majoorpad , Lengte: 25 m
+		 >> Id: 49601 , Naam: Noorderring , Lengte: 17519 m
+	> Mesen :24 ,totale lengte:10342
+		 >> Id: 49837 , Naam: Oud Kerkhofstraat , Lengte: 43 m
+		 >> Id: 49834 , Naam: Nieuw Zeelandersstraat , Lengte: 2337 m
+	> Poperinge :390 ,totale lengte:391194
+		 >> Id: 50092 , Naam: Palmweg , Lengte: 31 m
+		 >> Id: 49880 , Naam: Blokstraat , Lengte: 6522 m
+	> Wervik :223 ,totale lengte:196768
+		 >> Id: 50378 , Naam: Sint Maartensplein , Lengte: 30 m
+		 >> Id: 50349 , Naam: Oude Beselarestraat , Lengte: 6412 m
+	> Zonnebeke :189 ,totale lengte:240128
+		 >> Id: 50496 , Naam: Kouterstraat , Lengte: 58 m
+		 >> Id: 50477 , Naam: Ieperstraat , Lengte: 5979 m
+	> Heuvelland :236 ,totale lengte:325723
+		 >> Id: 50740 , Naam: Pannestraat , Lengte: 75 m
+		 >> Id: 50674 , Naam: Kemmelstraat , Lengte: 7452 m
+	> Langemark-Poelkapelle :109 ,totale lengte:163992
+		 >> Id: 216301 , Naam: Populierenhof , Lengte: 60 m
+		 >> Id: 50835 , Naam: Brugseweg , Lengte: 9274 m
+	> Vleteren :81 ,totale lengte:108694
+		 >> Id: 141426 , Naam: Canadaweg , Lengte: 61 m
+		 >> Id: 50926 , Naam: Eikhoekstraat , Lengte: 5666 m
+	> Anzegem :283 ,totale lengte:211673
+		 >> Id: 146684 , Naam: Groeningeplein , Lengte: 49 m
+		 >> Id: 51065 , Naam: Grote Leiestraat , Lengte: 4422 m
+	> Avelgem :140 ,totale lengte:100920
+		 >> Id: 141402 , Naam: Kanaalweg , Lengte: 58 m
+		 >> Id: 51331 , Naam: Oudenaardsesteenweg , Lengte: 6778 m
+	> Deerlijk :196 ,totale lengte:112167
+		 >> Id: 141379 , Naam: Mosschardstraat , Lengte: 6 m
+		 >> Id: 141380 , Naam: Ringlaan , Lengte: 6286 m
+	> Harelbeke :340 ,totale lengte:200471
+		 >> Id: 194956 , Naam: Veldovenstraat , Lengte: 42 m
+		 >> Id: 184119 , Naam: Jaagpad , Lengte: 6332 m
+	> Kortrijk :1255 ,totale lengte:614469
+		 >> Id: 52535 , Naam: Pater Vandeputteplein , Lengte: 24 m
+		 >> Id: 52036 , Naam: Doornikserijksweg , Lengte: 9510 m
+	> Kuurne :206 ,totale lengte:84388
+		 >> Id: 53007 , Naam: Morinenstraat , Lengte: 39 m
+		 >> Id: 52918 , Naam: Brugsesteenweg , Lengte: 3894 m
+	> Lendelede :103 ,totale lengte:66500
+		 >> Id: 190357 , Naam: Maaihofpad , Lengte: 39 m
+		 >> Id: 53141 , Naam: Rijksweg , Lengte: 4651 m
+	> Menen :360 ,totale lengte:217652
+		 >> Id: 53284 , Naam: Ijzerplein , Lengte: 35 m
+		 >> Id: 53222 , Naam: Dronckaertstraat , Lengte: 6428 m
+	> Waregem :461 ,totale lengte:315506
+		 >> Id: 182443 , Naam: Kernelleplein , Lengte: 54 m
+		 >> Id: 53616 , Naam: Expresweg , Lengte: 11400 m
+	> Wevelgem :359 ,totale lengte:237566
+		 >> Id: 141398 , Naam: Zilverberkenlaan , Lengte: 28 m
+		 >> Id: 54098 , Naam: Ieperstraat , Lengte: 5002 m
+	> Zwevegem :336 ,totale lengte:291984
+		 >> Id: 181394 , Naam: Zonnebloemstraat , Lengte: 24 m
+		 >> Id: 54515 , Naam: Otegemstraat , Lengte: 5867 m
+	> Spiere-Helkijn :55 ,totale lengte:36672
+		 >> Id: 54632 , Naam: Gemeenteplein , Lengte: 46 m
+		 >> Id: 54657 , Naam: Oudenaardseweg , Lengte: 3346 m
+	> Bredene :234 ,totale lengte:98720
+		 >> Id: 54782 , Naam: Meidoornlaan , Lengte: 26 m
+		 >> Id: 54764 , Naam: Koninklijke Baan , Lengte: 7476 m
+	> Gistel :206 ,totale lengte:151658
+		 >> Id: 54984 , Naam: Moerdijkstraat , Lengte: 2 m
+		 >> Id: 55000 , Naam: Oostendse Baan , Lengte: 7060 m
+	> Ichtegem :208 ,totale lengte:163828
+		 >> Id: 55099 , Naam: Eernegem-Markt , Lengte: 38 m
+		 >> Id: 55183 , Naam: Oostendesteenweg , Lengte: 6153 m
+	> Middelkerke :324 ,totale lengte:284686
+		 >> Id: 55296 , Naam: Breidelareweg , Lengte: 13 m
+		 >> Id: 55606 , Naam: Zwarteweg , Lengte: 9551 m
+	> Oostende :787 ,totale lengte:370358
+		 >> Id: 55835 , Naam: Hoppestraat , Lengte: 10 m
+		 >> Id: 55643 , Naam: Autoweg A 10 , Lengte: 12109 m
+	> Oudenburg :204 ,totale lengte:128347
+		 >> Id: 56370 , Naam: Essenlaan , Lengte: 25 m
+		 >> Id: 56472 , Naam: Stationsstraat , Lengte: 4260 m
+	> De Haan :346 ,totale lengte:163572
+		 >> Id: 56646 , Naam: Lindenhof , Lengte: 10 m
+		 >> Id: 56633 , Naam: Koninklijke Baan , Lengte: 8012 m
+	> Hooglede :140 ,totale lengte:147171
+		 >> Id: 181472 , Naam: Priamusplein , Lengte: 43 m
+		 >> Id: 56813 , Naam: Bruggesteenweg , Lengte: 8272 m
+	> Ingelmunster :196 ,totale lengte:104043
+		 >> Id: 57052 , Naam: Walbrugstraat , Lengte: 24 m
+		 >> Id: 56986 , Naam: Krekelstraat , Lengte: 4697 m
+	> Izegem :342 ,totale lengte:206025
+		 >> Id: 181841 , Naam: Meidoornstraat , Lengte: 32 m
+		 >> Id: 57291 , Naam: Rijksweg , Lengte: 5595 m
+	> Ledegem :128 ,totale lengte:116550
+		 >> Id: 180257 , Naam: Eikenlaan , Lengte: 64 m
+		 >> Id: 57459 , Naam: Provinciebaan , Lengte: 5369 m
+	> Lichtervelde :138 ,totale lengte:132170
+		 >> Id: 57566 , Naam: Kruiseekstraat , Lengte: 35 m
+		 >> Id: 57553 , Naam: Ketelbuiserstraat , Lengte: 5323 m
+	> Moorslede :160 ,totale lengte:156723
+		 >> Id: 57695 , Naam: Memlinglaan , Lengte: 56 m
+		 >> Id: 57641 , Naam: Dadizeelsestraat , Lengte: 5703 m
+	> Roeselare :743 ,totale lengte:474720
+		 >> Id: 58018 , Naam: Jan Van Eyckstraat , Lengte: 9 m
+		 >> Id: 186244 , Naam: R32 , Lengte: 16866 m
+	> Staden :223 ,totale lengte:186999
+		 >> Id: 58539 , Naam: Marktplaats , Lengte: 38 m
+		 >> Id: 58490 , Naam: Grote Veldstraat , Lengte: 6136 m
+	> Dentergem :117 ,totale lengte:113156
+		 >> Id: 58728 , Naam: Vandaelenstraat , Lengte: 28 m
+		 >> Id: 58723 , Naam: Tieltseweg , Lengte: 4734 m
+	> Meulebeke :170 ,totale lengte:143475
+		 >> Id: 58849 , Naam: Regentiestraat , Lengte: 21 m
+		 >> Id: 58829 , Naam: Oostrozebekestraat , Lengte: 5143 m
+	> Oostrozebeke :107 ,totale lengte:89512
+		 >> Id: 181246 , Naam: Mottestraat , Lengte: 54 m
+		 >> Id: 58924 , Naam: Kanaalweg , Lengte: 5150 m
+	> Pittem :138 ,totale lengte:144628
+		 >> Id: 58984 , Naam: Blekerijstraat , Lengte: 6 m
+		 >> Id: 58989 , Naam: Brugsesteenweg , Lengte: 8300 m
+	> Ruiselede :102 ,totale lengte:113472
+		 >> Id: 59116 , Naam: Cyriel Verhaegheplein , Lengte: 54 m
+		 >> Id: 59111 , Naam: Bruggesteenweg , Lengte: 5720 m
+	> Tielt :357 ,totale lengte:286005
+		 >> Id: 59432 , Naam: Polenplein , Lengte: 6 m
+		 >> Id: 59255 , Naam: Deinsesteenweg , Lengte: 6408 m
+	> Wielsbeke :142 ,totale lengte:112146
+		 >> Id: 59596 , Naam: Leiesas , Lengte: 33 m
+		 >> Id: 59626 , Naam: Rijksweg , Lengte: 6446 m
+	> Wingene :274 ,totale lengte:264463
+		 >> Id: 210662 , Naam: Krommewalstraat , Lengte: 40 m
+		 >> Id: 59667 , Naam: Beernemsteenweg , Lengte: 5433 m
+	> Ardooie :197 ,totale lengte:160850
+		 >> Id: 59924 , Naam: Brugsebaan , Lengte: 51 m
+		 >> Id: 60043 , Naam: Roeselaarsestraat , Lengte: 3983 m
+	> Alveringem :116 ,totale lengte:190957
+		 >> Id: 179092 , Naam: Pastoor Copinplein , Lengte: 58 m
+		 >> Id: 60146 , Naam: Lindestraat , Lengte: 8363 m
+	> De Panne :188 ,totale lengte:116644
+		 >> Id: 60300 , Naam: Landbouwersstraat , Lengte: 7 m
+		 >> Id: 60236 , Naam: Duinhoekstraat , Lengte: 5587 m
+	> Koksijde :615 ,totale lengte:282355
+		 >> Id: 60454 , Naam: Cactuslaan , Lengte: 16 m
+		 >> Id: 60673 , Naam: Koninklijke Baan , Lengte: 8886 m
+	> Nieuwpoort :188 ,totale lengte:138179
+		 >> Id: 146180 , Naam: Westerstaketsel , Lengte: 57 m
+		 >> Id: 61085 , Naam: Hemmestraat , Lengte: 9540 m
+	> Veurne :264 ,totale lengte:278205
+		 >> Id: 166328 , Naam: Vlasbekjesstraat , Lengte: 30 m
+		 >> Id: 61282 , Naam: Ieperse Steenweg , Lengte: 6729 m
+
+StraatInfo voor provincie Oost-Vlaanderen :
+
+	> Aalst :871 ,totale lengte:474538
+		 >> Id: 62272 , Naam: Werf , Lengte: 11 m
+		 >> Id: 61478 , Naam: Autosnelweg Oostende-Brussel , Lengte: 24403 m
+	> Denderleeuw :206 ,totale lengte:89498
+		 >> Id: 62413 , Naam: Maanstraat , Lengte: 47 m
+		 >> Id: 62464 , Naam: Steenweg , Lengte: 4834 m
+	> Geraardsbergen :375 ,totale lengte:299420
+		 >> Id: 141929 , Naam: CORDENUITSTRAAT , Lengte: 8 m
+		 >> Id: 62550 , Naam: Damstraat , Lengte: 7489 m
+	> Haaltert :164 ,totale lengte:127248
+		 >> Id: 62959 , Naam: Pachterstraat , Lengte: 89 m
+		 >> Id: 62940 , Naam: Lebeke , Lengte: 3297 m
+	> Herzele :189 ,totale lengte:163273
+		 >> Id: 63093 , Naam: Langestraat , Lengte: 5 m
+		 >> Id: 63127 , Naam: Provincieweg , Lengte: 5738 m
+	> Lede :220 ,totale lengte:131919
+		 >> Id: 63285 , Naam: Lochtingstraatje , Lengte: 38 m
+		 >> Id: 63222 , Naam: Grote Steenweg , Lengte: 7261 m
+	> Ninove :453 ,totale lengte:315357
+		 >> Id: 63659 , Naam: Paul De Montplein , Lengte: 41 m
+		 >> Id: 63476 , Naam: Expresweg , Lengte: 7384 m
+	> Sint-Lievens-Houtem :122 ,totale lengte:95489
+		 >> Id: 141946 , Naam: Donckershof , Lengte: 53 m
+		 >> Id: 63906 , Naam: Wettersesteenweg , Lengte: 4013 m
+	> Zottegem :535 ,totale lengte:268105
+		 >> Id: 64024 , Naam: Graaf van Hornsteeg 3 , Lengte: 15 m
+		 >> Id: 64006 , Naam: Europaweg , Lengte: 13362 m
+	> Erpe-Mere :272 ,totale lengte:183819
+		 >> Id: 64457 , Naam: Groendal_02 , Lengte: 8 m
+		 >> Id: 64577 , Naam: Oudenaardsesteenweg , Lengte: 14093 m
+	> Berlare :223 ,totale lengte:148187
+		 >> Id: 141855 , Naam: Donkerstraatje , Lengte: 44 m
+		 >> Id: 64680 , Naam: Donklaan , Lengte: 5040 m
+	> Buggenhout :217 ,totale lengte:115358
+		 >> Id: 64908 , Naam: Langhuis , Lengte: 41 m
+		 >> Id: 64893 , Naam: Kasteelstraat , Lengte: 4675 m
+	> Dendermonde :487 ,totale lengte:296065
+		 >> Id: 65146 , Naam: Heldenplein , Lengte: 39 m
+		 >> Id: 65372 , Naam: Sint-Onolfsdijk , Lengte: 11002 m
+	> Hamme :287 ,totale lengte:180779
+		 >> Id: 65657 , Naam: 't Spinnewiel , Lengte: 67 m
+		 >> Id: 141791 , Naam: Rijksweg , Lengte: 4900 m
+	> Laarne :154 ,totale lengte:148536
+		 >> Id: 65696 , Naam: Bleekweg , Lengte: 58 m
+		 >> Id: 147190 , Naam: Autosnelweg E17 , Lengte: 24619 m
+	> Lebbeke :177 ,totale lengte:122274
+		 >> Id: 65914 , Naam: Koningin Astridplein , Lengte: 49 m
+		 >> Id: 65849 , Naam: Brusselsesteenweg , Lengte: 3762 m
+	> Waasmunster :162 ,totale lengte:129704
+		 >> Id: 141808 , Naam: Schoonhoudtstraat , Lengte: 28 m
+		 >> Id: 66034 , Naam: Grote Baan , Lengte: 5923 m
+	> Wetteren :290 ,totale lengte:209611
+		 >> Id: 66378 , Naam: Steenstraat , Lengte: 41 m
+		 >> Id: 66382 , Naam: Tragelweg , Lengte: 6926 m
+	> Wichelen :132 ,totale lengte:87119
+		 >> Id: 66527 , Naam: Vijverweg , Lengte: 93 m
+		 >> Id: 66467 , Naam: Hulst , Lengte: 2697 m
+	> Zele :227 ,totale lengte:159600
+		 >> Id: 142539 , Naam: Molenhof , Lengte: 42 m
+		 >> Id: 142524 , Naam: Europalaan , Lengte: 11386 m
+	> Assenede :232 ,totale lengte:248572
+		 >> Id: 66832 , Naam: Molenplein , Lengte: 55 m
+		 >> Id: 66781 , Naam: Hollekenstraat , Lengte: 8179 m
+	> Eeklo :305 ,totale lengte:160877
+		 >> Id: 67047 , Naam: Ledeganckplein , Lengte: 12 m
+		 >> Id: 66977 , Naam: Expresweg N49 , Lengte: 14409 m
+	> Kaprijke :100 ,totale lengte:84902
+		 >> Id: 148768 , Naam: Boslucht , Lengte: 55 m
+		 >> Id: 67183 , Naam: Antwerpse Heirweg , Lengte: 4854 m
+	> Maldegem :337 ,totale lengte:356306
+		 >> Id: 146312 , Naam: Ballingstraatje , Lengte: 49 m
+		 >> Id: 67439 , Naam: N 49 , Lengte: 13935 m
+	> Sint-Laureins :171 ,totale lengte:217460
+		 >> Id: 146697 , Naam: Ter Vaerent , Lengte: 42 m
+		 >> Id: 67600 , Naam: Hontseindestraat , Lengte: 7588 m
+	> Zelzate :165 ,totale lengte:108648
+		 >> Id: 67765 , Naam: Kortestraat , Lengte: 62 m
+		 >> Id: 141658 , Naam: Expressweg , Lengte: 9059 m
+	> De Pinte :196 ,totale lengte:108378
+		 >> Id: 181070 , Naam: Lindenbulk , Lengte: 23 m
+		 >> Id: 68545 , Naam: Grote steenweg , Lengte: 7506 m
+	> Destelbergen :272 ,totale lengte:165060
+		 >> Id: 68826 , Naam: Molenhoek , Lengte: 56 m
+		 >> Id: 68713 , Naam: Dendermondesteenweg , Lengte: 8252 m
+	> Evergem :479 ,totale lengte:323368
+		 >> Id: 195233 , Naam: Broederhof , Lengte: 35 m
+		 >> Id: 69089 , Naam: Jacques Paryslaan , Lengte: 23757 m
+	> Gavere :176 ,totale lengte:142890
+		 >> Id: 69337 , Naam: Akkerlos , Lengte: 94 m
+		 >> Id: 69341 , Naam: Baaigemstraat , Lengte: 6054 m
+	> Gent :2870 ,totale lengte:1321052
+		 >> Id: 71395 , Naam: Raffinaderijstraatje , Lengte: 13 m
+		 >> Id: 70536 , Naam: John Kennedylaan , Lengte: 28510 m
+	> Lochristi :248 ,totale lengte:208445
+		 >> Id: 72252 , Naam: Baljuwweg , Lengte: 68 m
+		 >> Id: 72392 , Naam: Oude Veldstraat , Lengte: 5910 m
+	> Melle :146 ,totale lengte:83348
+		 >> Id: 72671 , Naam: Torenvalkstraat , Lengte: 12 m
+		 >> Id: 72586 , Naam: Brusselsesteenweg , Lengte: 9776 m
+	> Merelbeke :322 ,totale lengte:198780
+		 >> Id: 145929 , Naam: Ter Zate , Lengte: 29 m
+		 >> Id: 72782 , Naam: Hundelgemsesteenweg , Lengte: 11229 m
+	> Moerbeke :104 ,totale lengte:112115
+		 >> Id: 141736 , Naam: Grensstraat , Lengte: 12 m
+		 >> Id: 141734 , Naam: Expressweg , Lengte: 7642 m
+	> Nazareth :168 ,totale lengte:166251
+		 >> Id: 73030 , Naam: Beekweg , Lengte: 62 m
+		 >> Id: 73111 , Naam: Nieuwe Steenweg , Lengte: 10881 m
+	> Oosterzele :184 ,totale lengte:166303
+		 >> Id: 73372 , Naam: Eendenweg , Lengte: 65 m
+		 >> Id: 73381 , Naam: Geraardsbergse steenweg , Lengte: 12221 m
+	> Sint-Martens-Latem :146 ,totale lengte:94273
+		 >> Id: 173150 , Naam: Bijlden Bos , Lengte: 57 m
+		 >> Id: 73657 , Naam: Xavier De Cocklaan , Lengte: 4591 m
+	> Wachtebeke :123 ,totale lengte:114914
+		 >> Id: 73781 , Naam: Kievitstraat , Lengte: 72 m
+		 >> Id: 73788 , Naam: Langelede , Lengte: 9406 m
+	> Zulte :219 ,totale lengte:182990
+		 >> Id: 74048 , Naam: Machelendorp , Lengte: 8 m
+		 >> Id: 151757 , Naam: Leie Linkeroever , Lengte: 7234 m
+	> Oudenaarde :472 ,totale lengte:348124
+		 >> Id: 145866 , Naam: Minderbroedersplein , Lengte: 9 m
+		 >> Id: 74764 , Naam: Westerring , Lengte: 19071 m
+	> Ronse :331 ,totale lengte:176996
+		 >> Id: 150689 , Naam: Ephrem Delmottestraat , Lengte: 15 m
+		 >> Id: 74993 , Naam: Ninoofsesteenweg , Lengte: 4649 m
+	> Brakel :316 ,totale lengte:247512
+		 >> Id: 75245 , Naam: Brugstraat , Lengte: 51 m
+		 >> Id: 75440 , Naam: Ronsesestraat , Lengte: 4547 m
+	> Kluisbergen :134 ,totale lengte:120914
+		 >> Id: 185849 , Naam: Garenstraat , Lengte: 52 m
+		 >> Id: 75615 , Naam: Ronse Baan , Lengte: 4559 m
+	> Wortegem-Petegem :118 ,totale lengte:150487
+		 >> Id: 142733 , Naam: Nedermolen , Lengte: 78 m
+		 >> Id: 75693 , Naam: Kortrijkstraat , Lengte: 5848 m
+	> Horebeke :63 ,totale lengte:44474
+		 >> Id: 75788 , Naam: Leugenstraat , Lengte: 61 m
+		 >> Id: 75771 , Naam: Heerweg , Lengte: 2307 m
+	> Lierde :80 ,totale lengte:85232
+		 >> Id: 75819 , Naam: Buurthuisplein , Lengte: 28 m
+		 >> Id: 75872 , Naam: Steenweg , Lengte: 5622 m
+	> Maarkedal :185 ,totale lengte:175235
+		 >> Id: 76001 , Naam: Nitterveldstraat , Lengte: 7 m
+		 >> Id: 76019 , Naam: Rijksweg , Lengte: 10927 m
+	> Zwalm :148 ,totale lengte:153344
+		 >> Id: 141966 , Naam: MIJNWERKERSPAD , Lengte: 34 m
+		 >> Id: 76129 , Naam: Latemdreef , Lengte: 3709 m
+	> Beveren :573 ,totale lengte:542077
+		 >> Id: 76682 , Naam: Voshoek , Lengte: 31 m
+		 >> Id: 76608 , Naam: Sint-Antoniusweg , Lengte: 31601 m
+	> Kruibeke :222 ,totale lengte:140849
+		 >> Id: 167078 , Naam: Ten Wijngaarde , Lengte: 45 m
+		 >> Id: 76894 , Naam: Scheldedijk , Lengte: 9431 m
+	> Lokeren :468 ,totale lengte:315980
+		 >> Id: 77104 , Naam: Koningin Astridplein , Lengte: 24 m
+		 >> Id: 77024 , Naam: Gentse Steenweg , Lengte: 8985 m
+	> Sint-Gillis-Waas :237 ,totale lengte:205843
+		 >> Id: 77400 , Naam: Kasteelstraat , Lengte: 22 m
+		 >> Id: 145500 , Naam: Hogewatergangweg , Lengte: 4361 m
+	> Sint-Niklaas :586 ,totale lengte:410524
+		 >> Id: 77769 , Naam: Kriekelaarstraat , Lengte: 37 m
+		 >> Id: 77836 , Naam: Nieuwe Baan , Lengte: 5987 m
+	> Stekene :192 ,totale lengte:179727
+		 >> Id: 199942 , Naam: Voorthoekdreef , Lengte: 32 m
+		 >> Id: 78066 , Naam: Hellestraat , Lengte: 5228 m
+	> Temse :314 ,totale lengte:195093
+		 >> Id: 78195 , Naam: Bank , Lengte: 46 m
+		 >> Id: 78269 , Naam: Gewestweg N 16 , Lengte: 9431 m
+	> Deinze :721 ,totale lengte:625740
+		 >> Id: 216245 , Naam: Ridderstraat , Lengte: 44 m
+		 >> Id: 206048 , Naam: Vaart Rechts , Lengte: 8194 m
+	> Aalter :446 ,totale lengte:449907
+		 >> Id: 203270 , Naam: Aard , Lengte: 44 m
+		 >> Id: 203464 , Naam: Knokkebaan , Lengte: 17947 m
+	> Lievegem :336 ,totale lengte:269382
+		 >> Id: 205309 , Naam: Kerkplein , Lengte: 22 m
+		 >> Id: 205269 , Naam: Grote Baan , Lengte: 9676 m
+	> Kruisem :324 ,totale lengte:342428
+		 >> Id: 204449 , Naam: Peerdekouterstraat , Lengte: 55 m
+		 >> Id: 206274 , Naam: Autosnelweg E17 , Lengte: 22243 m
+
+StraatInfo voor provincie Limburg :
+
+	> As :156 ,totale lengte:99642
+		 >> Id: 112619 , Naam: Koning Boudewijnplein , Lengte: 69 m
+		 >> Id: 112596 , Naam: Hoogstraat , Lengte: 3937 m
+	> Beringen :581 ,totale lengte:388706
+		 >> Id: 172596 , Naam: Het Hof , Lengte: 25 m
+		 >> Id: 112936 , Naam: Koolmijnlaan , Lengte: 7310 m
+	> Diepenbeek :226 ,totale lengte:201699
+		 >> Id: 113455 , Naam: Weenderikstraat , Lengte: 60 m
+		 >> Id: 113269 , Naam: Boudewijnlaan , Lengte: 10818 m
+	> Genk :819 ,totale lengte:580472
+		 >> Id: 113660 , Naam: Geerstraat , Lengte: 36 m
+		 >> Id: 113642 , Naam: Europalaan , Lengte: 19072 m
+	> Gingelom :154 ,totale lengte:119889
+		 >> Id: 114370 , Naam: Smisberg , Lengte: 40 m
+		 >> Id: 114348 , Naam: Oude Katsei , Lengte: 4956 m
+	> Halen :128 ,totale lengte:128166
+		 >> Id: 150189 , Naam: Zagerijplein , Lengte: 60 m
+		 >> Id: 114487 , Naam: Staatsbaan , Lengte: 6971 m
+	> Hasselt :806 ,totale lengte:591363
+		 >> Id: 151708 , Naam: G. Verdilaan , Lengte: 30 m
+		 >> Id: 114822 , Naam: Kempische steenweg , Lengte: 10063 m
+	> Herk-de-Stad :174 ,totale lengte:168348
+		 >> Id: 144562 , Naam: Servaes Vaesplein , Lengte: 39 m
+		 >> Id: 115347 , Naam: Steenweg , Lengte: 8870 m
+	> Leopoldsburg :263 ,totale lengte:140612
+		 >> Id: 115467 , Naam: Jesperslaan , Lengte: 70 m
+		 >> Id: 141260 , Naam: Koning Albertlaan , Lengte: 4587 m
+	> Lummen :247 ,totale lengte:209461
+		 >> Id: 115817 , Naam: Wetsdreef , Lengte: 61 m
+		 >> Id: 115769 , Naam: Schalbroekstraat , Lengte: 3865 m
+	> Nieuwerkerken :69 ,totale lengte:75463
+		 >> Id: 213472 , Naam: Paenhuysstraat , Lengte: 101 m
+		 >> Id: 115880 , Naam: Tegelrijstraat , Lengte: 4470 m
+	> Sint-Truiden :536 ,totale lengte:407247
+		 >> Id: 180401 , Naam: Swaenhoffplein , Lengte: 30 m
+		 >> Id: 116229 , Naam: Luikersteenweg , Lengte: 11509 m
+	> Tessenderlo :162 ,totale lengte:224266
+		 >> Id: 141295 , Naam: Nijverheidsweg , Lengte: 38 m
+		 >> Id: 116500 , Naam: Industrieweg , Lengte: 9178 m
+	> Zonhoven :288 ,totale lengte:183773
+		 >> Id: 169814 , Naam: Boomhommelstraat , Lengte: 8 m
+		 >> Id: 116678 , Naam: Heuveneindeweg , Lengte: 3602 m
+	> Zutendaal :179 ,totale lengte:110953
+		 >> Id: 116941 , Naam: Lemmesplein , Lengte: 27 m
+		 >> Id: 116861 , Naam: Bilzerweg , Lengte: 2796 m
+	> Ham :176 ,totale lengte:151177
+		 >> Id: 154356 , Naam: Voornstraat , Lengte: 41 m
+		 >> Id: 117153 , Naam: Zwartenhoekstraat , Lengte: 8889 m
+	> Heusden-Zolder :479 ,totale lengte:287792
+		 >> Id: 117212 , Naam: Brilonplein , Lengte: 48 m
+		 >> Id: 117544 , Naam: Terlaemen , Lengte: 8396 m
+	> Bocholt :224 ,totale lengte:223860
+		 >> Id: 197856 , Naam: Gierisstraat , Lengte: 56 m
+		 >> Id: 117687 , Naam: Kempenstraat , Lengte: 7276 m
+	> Bree :297 ,totale lengte:238396
+		 >> Id: 118006 , Naam: Veldweg , Lengte: 37 m
+		 >> Id: 117991 , Naam: 't Hasseltkiezel , Lengte: 12256 m
+	> Kinrooi :259 ,totale lengte:226199
+		 >> Id: 118037 , Naam: Bellevuestraatje , Lengte: 59 m
+		 >> Id: 118267 , Naam: Weertersteenweg , Lengte: 8556 m
+	> Lommel :530 ,totale lengte:383718
+		 >> Id: 118533 , Naam: Leukerheide , Lengte: 56 m
+		 >> Id: 141214 , Naam: Ringlaan , Lengte: 15338 m
+	> Maaseik :409 ,totale lengte:293823
+		 >> Id: 118894 , Naam: Hepperpoort , Lengte: 21 m
+		 >> Id: 118822 , Naam: Diestersteenweg , Lengte: 5727 m
+	> Peer :306 ,totale lengte:298069
+		 >> Id: 119801 , Naam: Pastoor Lootspleintje , Lengte: 29 m
+		 >> Id: 119677 , Naam: Erperheidestraat , Lengte: 7717 m
+	> Hamont-Achel :253 ,totale lengte:182203
+		 >> Id: 178577 , Naam: Olmstraat , Lengte: 30 m
+		 >> Id: 119900 , Naam: Beverbeek , Lengte: 4715 m
+	> Hechtel-Eksel :216 ,totale lengte:208173
+		 >> Id: 144935 , Naam: Gemeenteplein , Lengte: 42 m
+		 >> Id: 141232 , Naam: Noord Zuid Verbinding , Lengte: 18877 m
+	> Houthalen-Helchteren :384 ,totale lengte:280260
+		 >> Id: 120599 , Naam: Schommelweg , Lengte: 40 m
+		 >> Id: 120410 , Naam: Grote Baan , Lengte: 15857 m
+	> Dilsen-Stokkem :271 ,totale lengte:232405
+		 >> Id: 166418 , Naam: De Wieke Tuin , Lengte: 36 m
+		 >> Id: 121073 , Naam: Rijksweg , Lengte: 21350 m
+	> Alken :155 ,totale lengte:106050
+		 >> Id: 121272 , Naam: Valgaersteeg , Lengte: 54 m
+		 >> Id: 121266 , Naam: Steenweg , Lengte: 5410 m
+	> Bilzen :579 ,totale lengte:351708
+		 >> Id: 121621 , Naam: St.Amorplein , Lengte: 32 m
+		 >> Id: 121575 , Naam: Rode Kruislaan , Lengte: 6226 m
+	> Borgloon :179 ,totale lengte:144231
+		 >> Id: 121756 , Naam: Kapittel , Lengte: 31 m
+		 >> Id: 121827 , Naam: St.-Truidersteenweg , Lengte: 9646 m
+	> Heers :130 ,totale lengte:108438
+		 >> Id: 159965 , Naam: Elzenhoutlaan , Lengte: 3 m
+		 >> Id: 121965 , Naam: Steenweg , Lengte: 8279 m
+	> Herstappe :7 ,totale lengte:2361
+		 >> Id: 181421 , Naam: Herstapperveld , Lengte: 165 m
+		 >> Id: 121981 , Naam: Kerkstraat , Lengte: 741 m
+	> Hoeselt :155 ,totale lengte:101999
+		 >> Id: 121990 , Naam: Bieskuilstraat , Lengte: 73 m
+		 >> Id: 122114 , Naam: Tongersesteenweg , Lengte: 3953 m
+	> Kortessem :171 ,totale lengte:117667
+		 >> Id: 122219 , Naam: Oude-Ramenstraat , Lengte: 27 m
+		 >> Id: 122248 , Naam: Tongersesteenweg , Lengte: 5774 m
+	> Lanaken :401 ,totale lengte:239538
+		 >> Id: 181597 , Naam: In het Kalf , Lengte: 26 m
+		 >> Id: 122315 , Naam: Daalbroekstraat , Lengte: 6792 m
+	> Riemst :268 ,totale lengte:187191
+		 >> Id: 182314 , Naam: Rouw , Lengte: 44 m
+		 >> Id: 122859 , Naam: Tongersesteenweg , Lengte: 9301 m
+	> Tongeren :496 ,totale lengte:306592
+		 >> Id: 141122 , Naam: Molensteeg , Lengte: 28 m
+		 >> Id: 123123 , Naam: Luikersteenweg , Lengte: 6211 m
+	> Wellen :89 ,totale lengte:69963
+		 >> Id: 185968 , Naam: Nieuwmolen , Lengte: 71 m
+		 >> Id: 123333 , Naam: Bosstraat , Lengte: 2535 m
+	> Maasmechelen :433 ,totale lengte:273212
+		 >> Id: 123591 , Naam: Kleine Hulst , Lengte: 36 m
+		 >> Id: 123721 , Naam: Rijksweg , Lengte: 16398 m
+	> Voeren :170 ,totale lengte:127958
+		 >> Id: 150224 , Naam: Trappen , Lengte: 23 m
+		 >> Id: 123939 , Naam: Veurs , Lengte: 3436 m
+	> Oudsbergen :364 ,totale lengte:320832
+		 >> Id: 204868 , Naam: Bovenlee , Lengte: 7 m
+		 >> Id: 205057 , Naam: Ophovenstraat , Lengte: 8256 m
+	> Pelt :555 ,totale lengte:377653
+		 >> Id: 206315 , Naam: Den Akker , Lengte: 27 m
+		 >> Id: 206312 , Naam: Noord Zuid Verbinding , Lengte: 15417 m

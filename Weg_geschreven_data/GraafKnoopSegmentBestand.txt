@@ -1,0 +1,1 @@
+GraafId; KnoopId; knoop x punt; knoop y punt
