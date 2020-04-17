@@ -35,7 +35,8 @@ namespace Tool1
 
             #endregion nodige data en lists aanmaken met databeheer.cs
 
-            #region rapport aanmaken, zie vb. in map Rapport
+            #region
+            // rapport aanmaken, zie vb. in map Rapport
 
             string fileName = @"..\..\..\Rapport\RapportBestand.txt";
             FileInfo fileLoc = new FileInfo(fileName);
@@ -75,7 +76,7 @@ namespace Tool1
                 Console.WriteLine(Ex.ToString());
             }
 
-            #endregion rapport aanmaken, zie vb. in map Rapport
+            #endregion
 
             #region databestanden aanmaken vr databank, opslaan naar map Weg_geschreven_data
 
@@ -86,7 +87,7 @@ namespace Tool1
 
             #region werkend
 
-            //DEZE HIERONDER WERKT
+            ////DEZE HIERONDER WERKT
             //gemeente: GemeenteId, Gemeentenaam, straatId
             string fileNameGemeenteB = @"..\..\..\Weg_geschreven_data\GemeenteBestand.txt";
             FileInfo fileLocGemeenteB = new FileInfo(fileNameGemeenteB);
@@ -222,7 +223,7 @@ namespace Tool1
             long duration = stopWatch.ElapsedMilliseconds / 1000;
             Console.WriteLine("\nRunTime " + duration + " Elapsed seconds");
 
-            Console.ReadLine(); //3854 sec = 64min
+            Console.ReadLine(); //4271 sec = 64min
         }
 
         #region extraMethodes die ik gebruik voor rapport te schrijven
