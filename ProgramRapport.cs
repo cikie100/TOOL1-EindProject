@@ -18,7 +18,7 @@ namespace Tool1
       
             Stopwatch stopWatch = new Stopwatch();
             stopWatch.Start();
-
+           
             #region data en lists aanmaken
 
             List<Provincie> provincies = d.getprovinciesList(); //duurt 1 second
