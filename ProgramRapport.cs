@@ -7,7 +7,7 @@ using System.Linq;
 using Tool1.Databeh;
 using Tool1.Model;
 
-namespace Tool1
+namespace Tool1 //leest de data in
 {
     public class ProgramRapport
     {
