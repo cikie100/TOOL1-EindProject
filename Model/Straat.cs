@@ -75,7 +75,7 @@ namespace OpgaveLabo
                         if (segm != null)
                         {
                             //segmentId;,beginknoopId,eindknoopId
-                            x += (segm.segmentID.ToString() + ";" + segm.beginknoop.knoopID.ToString() + ";" + segm.beginknoop.knoopID.ToString() + ";[");
+                            x += (segm.segmentID.ToString() + ";" + segm.beginknoop.knoopID.ToString() + ";" + segm.eindknoop.knoopID.ToString() + ";[");
                             //Alle Punten afdrukken van segment
                             //punt x, punt y
                             segm.punten_verticles.ForEach(punt => x += ("(" + punt.x.ToString() + "," + punt.y.ToString() + ")"));

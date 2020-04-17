@@ -177,7 +177,7 @@ namespace Tool1
             {
                 Console.WriteLine(Ex.ToString());
             }
-            //graaf: graafId, knoop, segmenten
+            //graaf: *GraafId; KnoopId; & meerdere: knoop x punt; knoop y punt; (segmID;segm.beginknoop.knoopID;segm.eindknoop.knoopID)[(punt.x,punt.y)(punt.x,punt.y)...]
             string fileNameGraafB = @"..\..\..\Weg_geschreven_data\GraafBestand.txt";
             FileInfo fileLocGraafrB = new FileInfo(fileNameGraafB);
             try
@@ -191,7 +191,7 @@ namespace Tool1
                 // Create a new file
                 using (StreamWriter sw = File.CreateText(fileNameGraafB))
                 {
-                    sw.WriteLine("GraafId; KnoopId; knoop x punt; knoop y punt");
+                    sw.WriteLine("*GraafId; KnoopId; knoop x punt; knoop y punt; (segmID;segm.beginknoop.knoopID;segm.eindknoop.knoopID)[(punt.x,punt.y)(punt.x,punt.y)...]");
 
                     provincies.ForEach(p =>
                              p.gemeenteLijst.ForEach(g =>
