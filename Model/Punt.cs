@@ -19,10 +19,13 @@ namespace OpgaveLabo
             this.y = d2;
         }
 
+        //gebruikt voor testen en debug
         public override string ToString()
         {
             return ("Punt met x,y: ({0},{1})", x, y).ToString();
         }
+
+        #region equals & getHashCode
 
         public override bool Equals(object obj)
         {
@@ -35,5 +38,7 @@ namespace OpgaveLabo
         {
             return HashCode.Combine(x, y);
         }
+
+        #endregion equals & getHashCode
     }
 }

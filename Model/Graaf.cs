@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 
 namespace OpgaveLabo
@@ -8,7 +7,9 @@ namespace OpgaveLabo
     {
         #region Properties
 
+        //gebruikt om uniek id te maken
         private static int nrOfInstances = 0;
+
         public int graafID;
         public List<Segment> segmenten { get; set; }
         public Dictionary<Knoop, List<Segment>> map { get; set; }
@@ -151,6 +152,7 @@ namespace OpgaveLabo
 
         public static int _graafID { get; set; }
 
+        //geeft een uniek graaf id die nrOfInstances gebruikt
         public static Graaf buildGraaf(List<Segment> segmenten)
         {
             _graafID = Graaf.nrOfInstances;
@@ -158,6 +160,7 @@ namespace OpgaveLabo
             return new Graaf(_graafID, segmenten);
         }
 
+        //ook gebruikt door straat.cs
         public List<Knoop> getKnopen()
         {
             List<Knoop> knopen = null;
@@ -169,16 +172,5 @@ namespace OpgaveLabo
 
             return knopen;
         }
-
-        public void showGraaf()
-        {
-         //  String x = "("+graafID.ToString()
-        }
-
-
-
-
     }
-
-
 }

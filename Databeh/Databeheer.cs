@@ -9,20 +9,21 @@ namespace Tool1.Databeh
 {
     public class Databeheer
     {
-        private List<Gemeente> gemeentes = getGemeente();
-       public  List<Segment> wegSegmentenLijstVoorDatabestand;
-        // List<Segment> wegSegmentenLijst = new List<Segment>(); //duurt 20 seconden(?!) + 578 000 elementen
+        //Hierin lees ik al de data bestanden in en verwerk ik hun naar klassen en etc
+        //
 
-        //originele dataMap is in D:\Users\ciki3\Desktop\Prog 3 eindproject\Tool1\WRData
+        private List<Gemeente> gemeentes = getGemeente();
+        public List<Segment> wegSegmentenLijstVoorDatabestand;
 
         #region inlees methodes
 
-        //ProvincieIDsVlaanderen.csv
-        //1,2,4,5,8
+        //
+        // geeft List terug met Provincie id's die moeten gebruikt worden
+        // ProvincieIDsVlaanderen.csv geeft 1,2,4,5,8
         public List<String> getprovincieIdsVlaanderen()
         {
             List<String> provincieIdsVlaanderen = new List<string>();
-            FileInfo providtxt = new FileInfo(@"..\..\..\WRData\ProvincieIDsVlaanderen.csv");
+            FileInfo providtxt = new FileInfo(@"..\..\..\..\WRData\ProvincieIDsVlaanderen.csv");
             using (StreamReader sreader = providtxt.OpenText())
             {
                 string cijfers = sreader.ReadLine();
@@ -37,15 +38,17 @@ namespace Tool1.Databeh
             return provincieIdsVlaanderen;
         }
 
-        //ProvincieInfo.csv
-        //geeft gemeenteId; provincieId; taalCodeProvincieNaam; provincieNaam
+        //
+        // geeft List terug met provincies en hun ( gemeenteId; provincieId; taalCodeProvincieNaam; provincieNaam)
+        // deze methonde bekijkt of de id in de lijst van getprovincieIdsVlaanderen() zit.
+        // ProvincieInfo.csv geeft gemeenteId; provincieId; taalCodeProvincieNaam; provincieNaam
         public List<Provincie> getprovinciesList()
         {
             List<String> ProvInVla = getprovincieIdsVlaanderen();
             List<Provincie> provinciesLijst = new List<Provincie>();
             List<string> ProvInfo = new List<string>();
 
-            FileInfo provtxt = new FileInfo(@"..\..\..\WRData\ProvincieInfo.csv");
+            FileInfo provtxt = new FileInfo(@"..\..\..\..\WRData\ProvincieInfo.csv");
             using (StreamReader sreader = provtxt.OpenText())
             {
                 string input = null;
@@ -87,14 +90,16 @@ namespace Tool1.Databeh
             return provinciesLijst;
         }
 
-        //WRGemeentenaam.csv
-        // geeft gemeenteNaamId; gemeenteId; taalCodeGemeenteNaam; gemeenteNaam
+        //
+        // maakt gemeentes aan en geeft List terug, bevat de methode getStraatNaamId_gemeenteID(List gemeente),
+        // die geeft List stratenNaamId toe per gemeente. Hierdoor weet je welke staat(Id) tot welke gemeente hoort.
+        // WRGemeentenaam.csv geeft gemeenteNaamId; gemeenteId; taalCodeGemeenteNaam; gemeenteNaam
         public static List<Gemeente> getGemeente()
         {
             List<Gemeente> Gemeentes = new List<Gemeente>();
             List<string> ProvInfo = new List<string>();
 
-            FileInfo Gemtxt = new FileInfo(@"..\..\..\WRData\WRGemeentenaam.csv");
+            FileInfo Gemtxt = new FileInfo(@"..\..\..\..\WRData\WRGemeentenaam.csv");
             using (StreamReader sreader = Gemtxt.OpenText())
             {
                 string input = null;
@@ -125,8 +130,9 @@ namespace Tool1.Databeh
             return Gemeentes;
         }
 
-        #endregion inlees methodes
-
+        //
+        // geeft al de straten die in provincie>gemeente>straat zitten een wegsegment terug.
+        // Wegsegmenten werden gemaakt door MaakSegmenten_vanDocument().
         public void GeefStratenWegSegment(List<Straat> stratenLijst, List<Provincie> provincies)
         {
             List<Segment> wegSegmentenLijst = new List<Segment>();
@@ -144,49 +150,39 @@ namespace Tool1.Databeh
             {
                 wegSegmentenLijst_VoorHuidige_straat = new List<Segment>();
 
-               
-                   foreach (Segment se in wegSegmentenLijst.Where(ws => ws.linksStraatnaamID <= stratenLijst[i].straatID+1
-                                                                    && ws.linksStraatnaamID >= stratenLijst[i].straatID-1
-                   ))
-                        {
-                            if (se.linksStraatnaamID.Equals(stratenLijst[i].straatID))
-                            {
-                                wegSegmentenLijst_VoorHuidige_straat.Add(se);
-                                
-                            }
-                        }
-                        if (wegSegmentenLijst_VoorHuidige_straat.Count > 0)
-                        {
-                            Graaf graafx = Graaf.buildGraaf(wegSegmentenLijst_VoorHuidige_straat);
-                            stratenLijst[i].graaf = graafx;
+                foreach (Segment se in wegSegmentenLijst.Where(ws => ws.linksStraatnaamID <= stratenLijst[i].straatID + 1
+                                                                 && ws.linksStraatnaamID >= stratenLijst[i].straatID - 1
+                ))
+                {
+                    if (se.linksStraatnaamID.Equals(stratenLijst[i].straatID))
+                    {
+                        wegSegmentenLijst_VoorHuidige_straat.Add(se);
+                    }
+                }
+                if (wegSegmentenLijst_VoorHuidige_straat.Count > 0)
+                {
+                    Graaf graafx = Graaf.buildGraaf(wegSegmentenLijst_VoorHuidige_straat);
+                    stratenLijst[i].graaf = graafx;
 
-                            stratenLijst[i].StraatLengthBerekenen();         
-                    
-                                if (stratenLijst[i].Length == 0) {
-                            
+                    stratenLijst[i].StraatLengthBerekenen();
 
-                                stratenLijst.Remove(stratenLijst[i]);
-                            }
-                  
-                            
+                    if (stratenLijst[i].Length == 0)
+                    {
+                        stratenLijst.Remove(stratenLijst[i]);
+                    }
 
-
-                            List <Segment> toRemove = new List<Segment>();
-                             toRemove = wegSegmentenLijst_VoorHuidige_straat;
-                                        foreach (Segment item in toRemove)
-                                        {
-                                             wegSegmentenLijst.Remove(item);
-                                        }
-                            
-                        }
-                
-
-
+                    List<Segment> toRemove = new List<Segment>();
+                    toRemove = wegSegmentenLijst_VoorHuidige_straat;
+                    foreach (Segment item in toRemove)
+                    {
+                        wegSegmentenLijst.Remove(item);
+                    }
+                }
             }
         }
 
-        //WRstraatnamen.csv
-        // geeft straatNaamId;straatNaam
+        // geeft een List terug, checkt eerst of een gemeente die stratenId bezit voor de straat word aangemaakt.
+        // WRstraatnamen.csv geeft straatNaamId;straatNaam
         public List<Straat> getStraatNamen(List<Provincie> provincies)
         {
             #region lees in van bestand
@@ -194,7 +190,7 @@ namespace Tool1.Databeh
             List<Straat> straten = new List<Straat>();
             List<String> StratenAllesInString = new List<string>();
 
-            FileInfo providtxt = new FileInfo(@"..\..\..\WRData\WRstraatnamen.csv");
+            FileInfo providtxt = new FileInfo(@"..\..\..\..\WRData\WRstraatnamen.csv");
             using (StreamReader sreader = providtxt.OpenText())
             {
                 string stratenLijn = sreader.ReadLine();
@@ -221,30 +217,20 @@ namespace Tool1.Databeh
             {
                 if (provincies.Any(p => p.gemeenteLijst.Any(g => g.stratenNaamId.Contains(StratenAllesInString[i]))))
                 {
-                    #region neverForget
-
-                    /////////////BELANGRIJK LJENA.. KOM HIEROP TERUG!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-                    //straatnaam id
-
-                    // if (wegSegmentenLijst_VoorHuidige_straat.Any(w => w.rechtsStraatnaamID)) { }
-                    //deze noddig Graaf graafx = Graaf.buildGraaf(wegSegmentenLijst_VoorHuidige_straat);
-                    //    straten.Add(new Straat(Int32.Parse(StratenAllesInString[i]), StratenAllesInString[i + 1],graafx));
                     straten.Add(new Straat(Int32.Parse(StratenAllesInString[i]), StratenAllesInString[i + 1]));
-                    //}
-
-                    #endregion neverForget
                 }
             }
             return straten;
         }
 
-        //WRGemeenteID.csv
-        // geeft straatNaamId;gemeenteId
+        //
+        // voegt straatnaamId's toe aan gepaste gemeente. wordt gebruikt door getGemeente();
+        // WRGemeenteID.csv geeft straatNaamId;gemeenteId
         public static void getStraatNaamId_gemeenteID(List<Gemeente> gemeentes)
         {
             List<String> Txt_naar_eenString = new List<String>();
 
-            FileInfo bestand_txt = new FileInfo(@"..\..\..\WRData\WRGemeenteId.csv");
+            FileInfo bestand_txt = new FileInfo(@"..\..\..\..\WRData\WRGemeenteId.csv");
             using (StreamReader sreader = bestand_txt.OpenText())
             {
                 string stratenLijn = sreader.ReadLine();
@@ -270,15 +256,15 @@ namespace Tool1.Databeh
             }
         }
 
-        //WRdata.csv
-        // geeft wegsegmentID; geo; morfologie; status; beginWegknoopID; eindWegknoopID; linksStraatnaamID; rechtsStraatnaamID;
-
+        //
+        // maakt segmenten lijst aan, wordt gebruikt door GeefStratenWegSegment(...)
+        // WRdata.csv geeft wegsegmentID; geo; morfologie; status; beginWegknoopID; eindWegknoopID; linksStraatnaamID; rechtsStraatnaamID;
         public List<Segment> MaakSegmenten_vanDocument()
         {
             List<Segment> segmentsList = new List<Segment>();
             List<String> WS_AllesInString = new List<string>();
 
-            FileInfo providtxt = new FileInfo(@"..\..\..\WRData\WRdata.csv");
+            FileInfo providtxt = new FileInfo(@"..\..\..\..\WRData\WRdata.csv");
             using (StreamReader sreader = providtxt.OpenText())
             {
                 // string stratenLijn = sreader.ReadLine();
@@ -333,6 +319,6 @@ namespace Tool1.Databeh
             return segmentsList;
         }
 
-    
+        #endregion inlees methodes
     }
 }

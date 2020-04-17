@@ -7,7 +7,9 @@ using System.Linq;
 using Tool1.Databeh;
 using Tool1.Model;
 
-namespace Tool1 //leest de data in
+namespace Tool1
+//leest de data braaf in
+//Alles zou moeten lukken, mss niet correct maar het lukt
 {
     public class ProgramRapport
     {
@@ -15,11 +17,10 @@ namespace Tool1 //leest de data in
 
         private static void Main(string[] args)
         {
-      
             Stopwatch stopWatch = new Stopwatch();
             stopWatch.Start();
-           
-            #region data en lists aanmaken
+
+            #region nodige data en lists aanmaken met databeheer.cs
 
             List<Provincie> provincies = d.getprovinciesList(); //duurt 1 second
 
@@ -32,180 +33,150 @@ namespace Tool1 //leest de data in
             //Duurt heeeeeel erg lang, maakt graaf objecten aan voor de straten
             d.GeefStratenWegSegment(gimmeStreets, provincies);  //--
 
-            #endregion data en lists aanmaken
+            #endregion nodige data en lists aanmaken met databeheer.cs
 
-            #region testen (mag verwijderd worden ljena)
+            #region rapport aanmaken, zie vb. in map Rapport
 
-            ////TRY
-            //List<Provincie> provincies = new List<Provincie>();
-            //provincies.Add(new Provincie("4", "nl", "Oost-Vlaanderen"));
-            //provincies[0].gemeenteLijst.Add(new Gemeente("0", "1", "nl", "Aalst"));
-            //provincies[0].gemeenteLijst[0].stratenLijst.Add(new Straat(1, "straat1"));
-            //provincies[0].gemeenteLijst[0].stratenLijst.Add(new Straat(2, "straat2"));
-            //provincies[0].gemeenteLijst[0].stratenLijst.Add(new Straat(3, "straat3"));
-            //provincies[0].gemeenteLijst[0].stratenLijst.Add(new Straat(4, "straat4"));
-            //provincies[0].gemeenteLijst[0].stratenLijst.Add(new Straat(5, "straat5"));
-            //provincies[0].gemeenteLijst[0].stratenLijst.Add(new Straat(6, "straat6"));
+            string fileName = @"..\..\..\Rapport\RapportBestand.txt";
+            FileInfo fileLoc = new FileInfo(fileName);
+            try
+            {
+                // Check if file already exists. If yes, delete it.
+                if (fileLoc.Exists)
+                {
+                    fileLoc.Delete();
+                }
 
-            //provincies[0].gemeenteLijst[0].stratenLijst[0].Length = 0.0;
-            //provincies[0].gemeenteLijst[0].stratenLijst[1].Length = 500;
-            //provincies[0].gemeenteLijst[0].stratenLijst[2].Length = 100;
-            //provincies[0].gemeenteLijst[0].stratenLijst[4].graaf = new Graaf(1, new List<Segment>(0));
+                // Create a new file
+                using (StreamWriter sw = File.CreateText(fileName))
+                {
+                    sw.WriteLine(StratenIntBerekenen_enAfdrukken(provincies) + "\n");
+                    sw.WriteLine("Aantal Straten per provincie : \n");
+                    Provafdrukken(provincies).ForEach(str => sw.WriteLine(str));
 
-            //Console.WriteLine(provincies[0].gemeenteLijst[0].Getkortste_straat());
-            //STOP
+                    foreach (Provincie prov in provincies)
+                    {
+                        sw.WriteLine("\nStraatInfo voor provincie " + prov.provincieNaam + " :\n");
+                        foreach (Gemeente gem in prov.gemeenteLijst)
+                        {
+                            if (!gem.TotaleLengte().Equals(0.ToString()))
+                            {
+                                sw.WriteLine("\t> " + gem.gemeenteNaam + " :" + gem.stratenLijst.Count.ToString() + " ,totale lengte:" + gem.TotaleLengte());
 
-            //Console.WriteLine(provincies[0].gemeenteLijst[0].Getkortste_straat());
+                                sw.WriteLine(gem.Getkortste_straat());
+                                sw.WriteLine(gem.Getlangste_straat());
+                            }
+                        }
+                    }
+                }
+            }
+            catch (Exception Ex)
+            {
+                Console.WriteLine(Ex.ToString());
+            }
 
-            #endregion testen (mag verwijderd worden ljena)
+            #endregion rapport aanmaken, zie vb. in map Rapport
 
-            #region rapport aanmaken LUKT v
-
-            //string fileName = @"..\..\..\Rapport\RapportBestand.txt";
-            //FileInfo fileLoc = new FileInfo(fileName);
-            //try
-            //{
-            //    // Check if file already exists. If yes, delete it.
-            //    if (fileLoc.Exists)
-            //    {
-            //        fileLoc.Delete();
-            //    }
-
-            //    // Create a new file
-            //    using (StreamWriter sw = File.CreateText(fileName))
-            //    {
-            //        sw.WriteLine(StratenIntBerekenen_enAfdrukken(provincies) + "\n");
-            //        sw.WriteLine("Aantal Straten per provincie : \n");
-            //        Provafdrukken(provincies).ForEach(str => sw.WriteLine(str));
-
-            //        foreach (Provincie prov in provincies)
-            //        {
-            //            sw.WriteLine("\nStraatInfo voor provincie " + prov.provincieNaam + " :\n");
-            //            foreach (Gemeente gem in prov.gemeenteLijst)
-            //            {
-            //                if (!gem.TotaleLengte().Equals(0.ToString()))
-            //                {
-            //                    sw.WriteLine("\t> " + gem.gemeenteNaam + " :" + gem.stratenLijst.Count.ToString() + " ,totale lengte:" + gem.TotaleLengte());
-
-            //                    sw.WriteLine(gem.Getkortste_straat());
-            //                    sw.WriteLine(gem.Getlangste_straat());
-            //                }
-            //            }
-            //        }
-            //    }
-            //}
-            //catch (Exception Ex)
-            //{
-            //    Console.WriteLine(Ex.ToString());
-            //}
-
-            #endregion rapport aanmaken
-
-            #region databestand aanmaken vr databank
+            #region databestanden aanmaken vr databank, opslaan naar map Weg_geschreven_data
 
             //Ik wil er 4 maken = provincie, gemeente, straat, graaf bestand.
+            // prov en gemeente zullen worden gelinkt met hun id's
+            // gemeente en straat zullen worden gelinkt met hun id's
+            // straat en graaf zullen worden gelinkt met hun id's
+
             #region werkend
-            ////DEZE HIERONDER WERKT
-            ////gemeente: GemeenteId, Gemeentenaam, straatId
-            //string fileNameGemeenteB = @"..\..\..\Weg_geschreven_data\GemeenteBestand.txt";
-            //FileInfo fileLocGemeenteB = new FileInfo(fileNameGemeenteB);
-            //try
-            //{
-            //    // Check if file already exists. If yes, delete it.
-            //    if (fileLocGemeenteB.Exists)
-            //    {
-            //        fileLocGemeenteB.Delete();
-            //    }
 
-            //    // Create a new file
-            //    using (StreamWriter sw = File.CreateText(fileNameGemeenteB))
-            //    {
-            //        #region Goedgekeurde Code
+            //DEZE HIERONDER WERKT
+            //gemeente: GemeenteId, Gemeentenaam, straatId
+            string fileNameGemeenteB = @"..\..\..\Weg_geschreven_data\GemeenteBestand.txt";
+            FileInfo fileLocGemeenteB = new FileInfo(fileNameGemeenteB);
+            try
+            {
+                // Check if file already exists. If yes, delete it.
+                if (fileLocGemeenteB.Exists)
+                {
+                    fileLocGemeenteB.Delete();
+                }
 
-            //        sw.WriteLine("StraatId;Gemeente_naam;(StraatId)");
+                // Create a new file
+                using (StreamWriter sw = File.CreateText(fileNameGemeenteB))
+                {
+                    #region Goedgekeurde Code
 
-            //        #endregion Goedgekeurde Code
+                    sw.WriteLine("GemeenteId;Gemeente_naam;(StraatId)");
 
-            //        foreach (Provincie prov in provincies)
-            //        {
-            //            foreach (Gemeente gem in prov.gemeenteLijst)
-            //            {
-            //                sw.WriteLine(gem.gemeenteId + ";" + gem.gemeenteNaam + ";(" + gem.returnAlleStraatIds() + ")");
-            //            }
-            //        }
-            //    }
-            //}
-            //catch (Exception Ex)
-            //{
-            //    Console.WriteLine(Ex.ToString());
-            //}
+                    #endregion Goedgekeurde Code
 
+                    foreach (Provincie prov in provincies)
+                    {
+                        foreach (Gemeente gem in prov.gemeenteLijst)
+                        {
+                            sw.WriteLine(gem.gemeenteId + ";" + gem.gemeenteNaam + ";(" + gem.returnAlleStraatIds() + ")");
+                        }
+                    }
+                }
+            }
+            catch (Exception Ex)
+            {
+                Console.WriteLine(Ex.ToString());
+            }
 
-            ////DEZE HIERONDER WERKT
-            ////provincie: provincieID, provnaam, taalcode, gemeenteId
-            //string fileNameProvB = @"..\..\..\Weg_geschreven_data\ProvincieBestand.txt";
-            //FileInfo fileLocProvB = new FileInfo(fileNameProvB);
-            //try
-            //{
-            //    // Check if file already exists. If yes, delete it.
-            //    if (fileLocProvB.Exists)
-            //    {
-            //        fileLocProvB.Delete();
-            //    }
+            //DEZE HIERONDER WERKT
+            //provincie: provincieID, provnaam, taalcode, gemeenteId
+            string fileNameProvB = @"..\..\..\Weg_geschreven_data\ProvincieBestand.txt";
+            FileInfo fileLocProvB = new FileInfo(fileNameProvB);
+            try
+            {
+                // Check if file already exists. If yes, delete it.
+                if (fileLocProvB.Exists)
+                {
+                    fileLocProvB.Delete();
+                }
 
-            //    // Create a new file
-            //    using (StreamWriter sw = File.CreateText(fileNameProvB))
-            //    {
-            //        sw.WriteLine("provincieID;Provnaam;taalcode;(gemeenteId)");
+                // Create a new file
+                using (StreamWriter sw = File.CreateText(fileNameProvB))
+                {
+                    sw.WriteLine("provincieID;Provnaam;taalcode;(gemeenteId)");
 
-            //        foreach (Provincie prov in provincies)
-            //        {
-            //            sw.WriteLine(prov.provincieId + ";" + prov.provincieNaam + ";" + prov.taalCodeProvincieNaam + ";(" + prov.GetGemeenteIds_voorDatabestand() + ")");
-            //        }
-            //    }
-            //}
-            //catch (Exception Ex)
-            //{
-            //    Console.WriteLine(Ex.ToString());
-            //}
+                    foreach (Provincie prov in provincies)
+                    {
+                        sw.WriteLine(prov.provincieId + ";" + prov.provincieNaam + ";" + prov.taalCodeProvincieNaam + ";(" + prov.GetGemeenteIds_voorDatabestand() + ")");
+                    }
+                }
+            }
+            catch (Exception Ex)
+            {
+                Console.WriteLine(Ex.ToString());
+            }
 
-            ////straat: straatId, naam, lengte, graafID
-            //string fileNameStrB = @"..\..\..\Weg_geschreven_data\StraatBestand.txt";
-            //FileInfo fileLocStrB = new FileInfo(fileNameStrB);
-            //try
-            //{
-            //    // Check if file already exists. If yes, delete it.
-            //    if (fileLocStrB.Exists)
-            //    {
-            //        fileLocStrB.Delete();
-            //    }
+            //straat: straatId, naam, lengte, graafID
+            string fileNameStrB = @"..\..\..\Weg_geschreven_data\StraatBestand.txt";
+            FileInfo fileLocStrB = new FileInfo(fileNameStrB);
+            try
+            {
+                // Check if file already exists. If yes, delete it.
+                if (fileLocStrB.Exists)
+                {
+                    fileLocStrB.Delete();
+                }
 
-            //    // Create a new file //waar lenght niet zero veranderen!
-            //    using (StreamWriter sw = File.CreateText(fileNameStrB))
-            //    {
-            //        sw.WriteLine("straatId;Straatnaam;lengte;graafID");
-            //        foreach (Straat s in gimmeStreets)
-            //        {
-            //            if (s.Length != 0)
-            //            {
-            //                sw.WriteLine(s.GetStraat_voorStraatDataBestand());
-            //            }
-
-            //        }
-            //    }
-
-
-
-
-            //}
-            //catch (Exception Ex)
-            //{
-            //    Console.WriteLine(Ex.ToString());
-            //}
-            #endregion
-
-
-
+                // Create a new file //waar lenght niet zero veranderen!
+                using (StreamWriter sw = File.CreateText(fileNameStrB))
+                {
+                    sw.WriteLine("straatId;Straatnaam;lengte;graafID");
+                    foreach (Straat s in gimmeStreets)
+                    {
+                        if (s.Length != 0)
+                        {
+                            sw.WriteLine(s.GetStraat_voorStraatDataBestand());
+                        }
+                    }
+                }
+            }
+            catch (Exception Ex)
+            {
+                Console.WriteLine(Ex.ToString());
+            }
             //graaf: graafId, knoop, segmenten
             string fileNameGraafB = @"..\..\..\Weg_geschreven_data\GraafBestand.txt";
             FileInfo fileLocGraafrB = new FileInfo(fileNameGraafB);
@@ -220,81 +191,38 @@ namespace Tool1 //leest de data in
                 // Create a new file
                 using (StreamWriter sw = File.CreateText(fileNameGraafB))
                 {
-                    
-
                     sw.WriteLine("GraafId; KnoopId; knoop x punt; knoop y punt");
-
-                   
 
                     provincies.ForEach(p =>
                              p.gemeenteLijst.ForEach(g =>
                                  g.stratenLijst.ForEach(straat =>
                                  {
-                                     if(straat.GetGraaF_voorDataBestand().Length > 1) {
-                                         sw.WriteLine(straat.GetGraaF_voorDataBestand());
-                                     }
-                                 }
-
-                                 )));
-                }
-            }
-            catch (Exception Ex)
-            {
-                Console.WriteLine(Ex.ToString());
-            }
-
-
-
-            //ALTERNATIEF
-            //graaf: graafId, knoop, segmenten
-            string fileNameGraaffB = @"..\..\..\Weg_geschreven_data\GraafKnoopSegmentBestand.txt";
-            FileInfo fileLocGraaffrB = new FileInfo(fileNameGraaffB);
-            try
-            {
-                // Check if file already exists. If yes, delete it.
-                if (fileLocGraaffrB.Exists)
-                {
-                    fileLocGraaffrB.Delete();
-                }
-
-                // Create a new file
-                using (StreamWriter sw = File.CreateText(fileNameGraaffB))
-                {
-
-
-                    sw.WriteLine("GraafId; KnoopId; knoop x punt; knoop y punt");
-                    provincies.ForEach(p =>
-                             p.gemeenteLijst.ForEach(g =>
-                                 g.stratenLijst.ForEach(straat =>
-                                 {
-                                     if (straat.GetGraaF_voorDataBestand().Length > 1)
+                                     if (straat.graaf != null && straat.Length != 0)
                                      {
-                                         sw.WriteLine(straat.GetGraaF_voorDataBestandd());
+                                         if (straat.GetGraaF_voorDataBestand().Length > 1)
+                                         {
+                                             sw.WriteLine(straat.GetGraaF_voorDataBestand());
+                                         }
                                      }
                                  }
 
                                  )));
-
                 }
-
-
-                    
-                
             }
             catch (Exception Ex)
             {
                 Console.WriteLine(Ex.ToString());
             }
 
+            #endregion werkend
 
-
-            #endregion databestand aanmaken vr databank
+            #endregion databestanden aanmaken vr databank, opslaan naar map Weg_geschreven_data
 
             stopWatch.Stop();
             long duration = stopWatch.ElapsedMilliseconds / 1000;
-              Console.WriteLine("\nRunTime " + duration + " Elapsed seconds");
+            Console.WriteLine("\nRunTime " + duration + " Elapsed seconds");
 
-            Console.ReadLine(); //4121 sec =
+            Console.ReadLine(); //3854 sec = 64min
         }
 
         #region extraMethodes die ik gebruik voor rapport te schrijven
@@ -328,8 +256,7 @@ namespace Tool1 //leest de data in
             List<String> lijstje = new List<string>();
             foreach (Provincie pr in provincies)
             {
-                //geeft gemeenteLijst count terug
-                //int x = pr.gemeenteLijst.Count(g => g.stratenNaamId.Any());
+                //geeft gemeente en zijn aantal straten terug (niet op straatid gebaseerd maar List<straat> van elk gemeente
 
                 int x = 0;
                 foreach (Gemeente gem in pr.gemeenteLijst)

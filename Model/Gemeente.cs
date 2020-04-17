@@ -7,6 +7,8 @@ namespace Tool1.Model
 {
     public class Gemeente
     {
+        #region prop
+
         public string gemeenteNaamId { get; set; }
         public string gemeenteId { get; set; }
 
@@ -19,6 +21,8 @@ namespace Tool1.Model
         public List<Straat> stratenLijst { get; set; }
         public List<String> stratenNaamId { get; set; }
 
+        #endregion prop
+
         public Gemeente(string gemeenteNaamId, string gemeenteId, string taalCodeGemeenteNaam, string gemeenteNaam)
         {
             this.gemeenteNaamId = gemeenteNaamId;
@@ -30,7 +34,8 @@ namespace Tool1.Model
             stratenNaamId = new List<string>();
         }
 
-        //vult de stratenNaamId lijst op in Databeheer
+        //vult de stratenNaamId lijst op van gemeente
+        //gebeurd in Databeheer: getStraatNaamId_gemeenteID(List gemeentes)
         public void addStratenNaamId_toGemeente(string StraatID, string gemID)
         {
             if (gemID.Equals(gemeenteId))
@@ -40,18 +45,22 @@ namespace Tool1.Model
         }
 
         //vraagt  veel
+        //laat ik gebeuren inProgramRappot.cs
         public void Dezegemeente_stratenObjecten_gevenVanTekstLijst(List<Straat> straten)
         {
             for (int i = 0; i < straten.Count; i++)
             {
                 if (stratenNaamId.Contains(straten[i].straatID.ToString()))
                 {
-                   
                     stratenLijst.Add(straten[i]);
                 }
             }
         }
 
+        #region methodes voor data wegschrijven te vermakelijken
+
+        //totale lengte berekenen van de gemeente
+        // gebruikt voor Rapport te maken
         public String TotaleLengte()
         {
             double l = 0.0;
@@ -63,27 +72,29 @@ namespace Tool1.Model
             return x.ToString();
         }
 
-        public String Getkortste_straat() {
-
+        public String Getkortste_straat()
+        {
             //  Straat kort = stratenLijst.Where(s => s.Length != 0.0 && s.Length != 0).Min();
-            
 
-            double x = stratenLijst.Where(s => s.Length !=0 ).Select(s => s.Length).Min();
+            double x = stratenLijst.Where(s => s.Length != 0).Select(s => s.Length).Min();
             Straat kort = stratenLijst.Where(s => s.Length.Equals(x)).FirstOrDefault();
 
-            return ("\t\t >> Id: " + kort.straatID.ToString() + " , Naam: " +kort.straatnaam.ToString().Trim() + " , Lengte: "+kort.Length.ToString()+" m");
+            return ("\t\t >> Id: " + kort.straatID.ToString() + " , Naam: " + kort.straatnaam.ToString().Trim() + " , Lengte: " + kort.Length.ToString() + " m");
         }
-        public String Getlangste_straat() {
+
+        public String Getlangste_straat()
+        {
             double x = stratenLijst.Max(s => s.Length);
             Straat lang = stratenLijst.Where(s => s.Length.Equals(x)).FirstOrDefault();
 
             return ("\t\t >> Id: " + lang.straatID.ToString() + " , Naam: " + lang.straatnaam.ToString().Trim() + " , Lengte: " + lang.Length.ToString() + " m");
         }
-        //
-        public String returnAlleStraatIds() {
 
+        //
+        public String returnAlleStraatIds()
+        {
             String x = "";
-            if (stratenLijst.Count !=0)
+            if (stratenLijst.Count != 0)
             {
                 for (int i = 0; i < stratenLijst.Count; i++)
                 {
@@ -91,10 +102,10 @@ namespace Tool1.Model
                 }
             }
             return x;
-        
         }
 
-        public String returnAlleStraatGraaf_vGemeente_GraafBestand() {
+        public String returnAlleStraatGraaf_vGemeente_GraafBestand()
+        {
             String x = "";
             stratenLijst.ForEach(straat =>
             {
@@ -105,7 +116,8 @@ namespace Tool1.Model
             });
 
             return x;
-        
         }
+
+        #endregion methodes voor data wegschrijven te vermakelijken
     }
 }

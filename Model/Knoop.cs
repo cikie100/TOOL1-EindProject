@@ -24,6 +24,8 @@ namespace OpgaveLabo
             return ("Knoop met id " + knoopID + " , verwijst naar punt x,y: ( " + punt.x + " , " + punt.y + " )");
         }
 
+        #region equals & getHashCode
+
         public override bool Equals(object obj)
         {
             return obj is Knoop knoop &&
@@ -35,6 +37,8 @@ namespace OpgaveLabo
         {
             return HashCode.Combine(knoopID, punt);
         }
+
+        #endregion equals & getHashCode
 
         //
     }
