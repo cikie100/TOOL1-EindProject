@@ -64,18 +64,18 @@ namespace OpgaveLabo
             if (graaf.map.Count != 0)
             {
                 //GraafId
-                x += ("*" + graaf.graafID.ToString() + ";");
+                x += (">graafID" + graaf.graafID.ToString() + ";");
 
                 foreach (KeyValuePair<Knoop, List<Segment>> kvp in graaf.map)
                 {
                     //KnoopId, knoop x punt, knoop y punt
-                    x += (kvp.Key.knoopID.ToString() + ";" + kvp.Key.punt.x.ToString() + ";" + kvp.Key.punt.y.ToString() + ";(");
+                    x += " KnoopId,puntx,punty: "+(kvp.Key.knoopID.ToString() + ";" + kvp.Key.punt.x.ToString() + ";" + kvp.Key.punt.y.ToString() + ";(");
                     kvp.Value.ForEach(segm =>
                     {
                         if (segm != null)
                         {
                             //segmentId;,beginknoopId,eindknoopId
-                            x += (segm.segmentID.ToString() + ";" + segm.beginknoop.knoopID.ToString() + ";" + segm.eindknoop.knoopID.ToString() + ";[");
+                            x += " segmentID,beginknoop.knoopID,eindknoop.knoopID: " + (segm.segmentID.ToString() + ";" + segm.beginknoop.knoopID.ToString() + ";" + segm.eindknoop.knoopID.ToString() + ";[");
                             //Alle Punten afdrukken van segment
                             //punt x, punt y
                             segm.punten_verticles.ForEach(punt => x += ("(" + punt.x.ToString() + "," + punt.y.ToString() + ")"));
@@ -84,7 +84,7 @@ namespace OpgaveLabo
                         }
                     });
                 }
-                x += " ";
+                x += "<";
             }
 
             return x;

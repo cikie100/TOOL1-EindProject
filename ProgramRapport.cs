@@ -35,8 +35,7 @@ namespace Tool1
 
             #endregion nodige data en lists aanmaken met databeheer.cs
 
-            #region
-            // rapport aanmaken, zie vb. in map Rapport
+            #region rapport aanmaken, zie vb. in map Rapport
 
             string fileName = @"..\..\..\Rapport\RapportBestand.txt";
             FileInfo fileLoc = new FileInfo(fileName);
@@ -87,8 +86,8 @@ namespace Tool1
 
             #region werkend
 
-            ////DEZE HIERONDER WERKT
-            //gemeente: GemeenteId, Gemeentenaam, straatId
+            //DEZE HIERONDER WERKT
+            // gemeente: GemeenteId, Gemeentenaam, straatId
             string fileNameGemeenteB = @"..\..\..\Weg_geschreven_data\GemeenteBestand.txt";
             FileInfo fileLocGemeenteB = new FileInfo(fileNameGemeenteB);
             try
@@ -178,6 +177,7 @@ namespace Tool1
             {
                 Console.WriteLine(Ex.ToString());
             }
+
             //graaf: *GraafId; KnoopId; & meerdere: knoop x punt; knoop y punt; (segmID;segm.beginknoop.knoopID;segm.eindknoop.knoopID)[(punt.x,punt.y)(punt.x,punt.y)...]
             string fileNameGraafB = @"..\..\..\Weg_geschreven_data\GraafBestand.txt";
             FileInfo fileLocGraafrB = new FileInfo(fileNameGraafB);
