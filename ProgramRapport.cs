@@ -28,7 +28,7 @@ namespace Tool1
             List<Straat> gimmeStreets = d.getStraatNamen(provincies); //duurt 73 seconden
 
             //--Vult gemeente lijst met juiste <Straat>
-            provincies.ForEach(p => p.gemeenteLijst.ForEach(g => g.Dezegemeente_stratenObjecten_gevenVanTekstLijst(gimmeStreets))); // duurt 54 seconden
+            provincies.ForEach(p => p.gemeenteLijst.ForEach(g => g.Dezegemeente_stratenObjecten_gevenVanTekstLijst(gimmeStreets))); // duurt 45 seconden
 
             //Duurt heeeeeel erg lang, maakt graaf objecten aan voor de straten
             d.GeefStratenWegSegment(gimmeStreets, provincies);  //--
