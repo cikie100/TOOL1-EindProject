@@ -26,12 +26,16 @@ namespace Tool1
 
             //--Maakt lijst straten aan die zich in bestaande gemeente lijst bevinden
             List<Straat> gimmeStreets = d.getStraatNamen(provincies); //duurt 73 seconden
+            
 
             //--Vult gemeente lijst met juiste <Straat>
             provincies.ForEach(p => p.gemeenteLijst.ForEach(g => g.Dezegemeente_stratenObjecten_gevenVanTekstLijst(gimmeStreets))); // duurt 45 seconden
 
             //Duurt heeeeeel erg lang, maakt graaf objecten aan voor de straten
             d.GeefStratenWegSegment(gimmeStreets, provincies);  //--
+
+     
+            Provafdrukken(provincies).ForEach(str => Console.WriteLine(str));
 
             #endregion nodige data en lists aanmaken met databeheer.cs
 
@@ -50,6 +54,8 @@ namespace Tool1
                 // Create a new file
                 using (StreamWriter sw = File.CreateText(fileName))
                 {
+                   
+
                     sw.WriteLine(StratenIntBerekenen_enAfdrukken(provincies) + "\n");
                     sw.WriteLine("Aantal Straten per provincie : \n");
                     Provafdrukken(provincies).ForEach(str => sw.WriteLine(str));

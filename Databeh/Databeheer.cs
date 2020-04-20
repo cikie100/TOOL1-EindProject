@@ -150,17 +150,39 @@ namespace Tool1.Databeh
             {
                 wegSegmentenLijst_VoorHuidige_straat = new List<Segment>();
 
+               
                 foreach (Segment se in wegSegmentenLijst.Where(ws => ws.linksStraatnaamID <= stratenLijst[i].straatID + 1
                                                                  && ws.linksStraatnaamID >= stratenLijst[i].straatID - 1
                 ))
                 {
                     if (se.linksStraatnaamID.Equals(stratenLijst[i].straatID))
                     {
-                        wegSegmentenLijst_VoorHuidige_straat.Add(se);
+                        if (wegSegmentenLijst_VoorHuidige_straat.Count.Equals(0) ||
+                            ! wegSegmentenLijst_VoorHuidige_straat.Exists(segm => segm.beginknoop.Equals(se.beginknoop) && segm.eindknoop.Equals(se.eindknoop)
+                            ))
+                        {
+                            wegSegmentenLijst_VoorHuidige_straat.Add(se);
+                        }
+                        else {
+                            Segment segmKop = wegSegmentenLijst_VoorHuidige_straat.Where(segm => segm.beginknoop.Equals(se.beginknoop) &&
+                                                                                        segm.eindknoop.Equals(se.eindknoop)).First();
+                            if (segmKop.Length > se.Length)
+                            {
+                                //doe niets
+                            }
+                            else {
+                                wegSegmentenLijst_VoorHuidige_straat.Add(se);
+                                wegSegmentenLijst_VoorHuidige_straat.Remove(segmKop);
+                            }
+
+
+                        }
                     }
                 }
                 if (wegSegmentenLijst_VoorHuidige_straat.Count > 0)
                 {
+
+                    
                     Graaf graafx = Graaf.buildGraaf(wegSegmentenLijst_VoorHuidige_straat);
                     stratenLijst[i].graaf = graafx;
 
@@ -177,6 +199,7 @@ namespace Tool1.Databeh
                     {
                         wegSegmentenLijst.Remove(item);
                     }
+                
                 }
             }
         }
