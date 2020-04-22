@@ -133,7 +133,7 @@ namespace Tool1.Databeh
         //
         // geeft al de straten die in provincie>gemeente>straat zitten een wegsegment terug.
         // Wegsegmenten werden gemaakt door MaakSegmenten_vanDocument().
-        public void GeefStratenWegSegment(List<Straat> stratenLijst, List<Provincie> provincies)
+        public void GeefStratenWegSegment(List<Straat> stratenLijst)
         {
             List<Segment> wegSegmentenLijst = new List<Segment>();
 

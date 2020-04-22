@@ -32,7 +32,7 @@ namespace Tool1
             provincies.ForEach(p => p.gemeenteLijst.ForEach(g => g.Dezegemeente_stratenObjecten_gevenVanTekstLijst(gimmeStreets))); // duurt 45 seconden
 
             //Duurt heeeeeel erg lang, maakt graaf objecten aan voor de straten
-            d.GeefStratenWegSegment(gimmeStreets, provincies);  //--
+            d.GeefStratenWegSegment(gimmeStreets);  //--
 
      
             Provafdrukken(provincies).ForEach(str => Console.WriteLine(str));
