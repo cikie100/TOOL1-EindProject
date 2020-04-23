@@ -54,7 +54,7 @@ namespace Tool1
                 // Create a new file
                 using (StreamWriter sw = File.CreateText(fileName))
                 {
-                   
+
 
                     sw.WriteLine(StratenIntBerekenen_enAfdrukken(provincies) + "\n");
                     sw.WriteLine("Aantal Straten per provincie : \n");
@@ -198,7 +198,7 @@ namespace Tool1
                 // Create a new file
                 using (StreamWriter sw = File.CreateText(fileNameGraafB))
                 {
-                    sw.WriteLine("*GraafId; KnoopId; knoop x punt; knoop y punt; (segmID;segm.beginknoop.knoopID;segm.eindknoop.knoopID)[(punt.x,punt.y)(punt.x,punt.y)...]");
+                    sw.WriteLine("*GraafId; KnoopId; knoop x punt; knoop y punt; (segmID;segm.beginknoop.knoopID;segm.eindknoop.knoopID,linksStraatnaamID,rechtsStraatnaamID)[(punt.x,punt.y)(punt.x,punt.y)...]");
 
                     provincies.ForEach(p =>
                              p.gemeenteLijst.ForEach(g =>
